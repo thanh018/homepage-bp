@@ -1,0 +1,147 @@
+
+/*----------  0.1. Color  ----------*/
+@text-color: #61728d;
+@title-color: #3a4d6a;
+@main-color: #ffb400;
+@cleaning-blue-color: #0e95db;
+@cleaning-yellow-color: #fbd022;
+@plumbing-color: #1bbde8;
+@loading-color: #271e01;
+
+
+/*----------  0.2. Social Color  ----------*/
+@facebook-color: #365899;
+@twitter-color: #1da1f2;
+@google-color: #d73d32;
+@pinterest-color: #bd081c;
+@vimeo-color: #00adef;
+@skype-color: #00aff0;
+@youtube-color: #e62117;
+@rss-color: #f36f24;
+@delicious-color: #2a96ff;
+@flickr-color: #ff0084;
+@lastfm-color: #b90000;
+@linkedin-color: #0077b5;
+@tumblr-color: #36465d;
+@deviantart-color: #05cc47;
+@git-color: #f34f29;
+@instagram-color: #895a4d;
+@soundcloud-color: #ff5500;
+@stumbleupon-color: #eb4924;
+@behance-color: #005cff;
+@tripadvisor-color: #589442;
+@vk-color: #507299;
+@foursquare-color: #f94877;
+@xing-color: #add000;
+@weibo-color: #e6162d;
+@odnoklassniki-color: #f58220;
+
+
+/*----------  0.3. Font  ----------*/
+@font-family: 'Roboto', serif;
+@font-family-2: 'Montserrat', sans-serif;
+@font-size: 14px;
+
+
+
+.circle(@param) {
+    border-radius: @param;
+    -webkit-border-radius: @param;
+    -moz-border-radius: @param;
+}
+
+.transition(@param) {
+    transition: @param;
+    -webkit-transition: @param;
+    -moz-transition: @param;
+    -o-transition: @param;
+}
+
+.l-height(@param) {
+    height: @param;
+    line-height: @param;
+}
+
+.transform(@param) {
+    transform: @param;
+    -webkit-transform: @param;
+    -moz-transform: @param;
+    -ms-transform: @param;
+    -o-transform: @param;
+}
+// .change-color-cleaning(@param1, @param2) {
+//     .topbar-icons, .topbar-text.big:hover, .slide-banner-1-item-wrapper .subtitle,
+//     .btn.main-color:hover, .btn.transparent.white-color:hover, .readmore:hover,
+//     .recent-post-inner .media-heading:hover, .banner-4 .subtitle, .testimonial-content .position,
+//     .testimonial-1 .testimonial-image:before, .recent-post-inner .media:hover .meta .icons,
+//     .meta-info.time .link, .block-2 .block-content .title:hover, .contact-info-box .wrapper-info .text .text-bold,
+//     .block-1 .block-content .title:hover
+//     {
+//         color: @param1 !important;
+//     }
+//     .detail-content > ul li:before, .package-content .title, .block-info .block .link.date,
+//     .menu-wrapper .sub-menu > li:hover > a, .mega-menu-wrapper .mega-menu-column .link:hover, .mega-menu-tablist li.active .link,
+//     .mega-menu-tablist li:hover .link, .block-2 .block-content .progress-bar-wrapper .progress .progress-bar {
+//         color: @param2 !important;   
+//     }
+//     .block-content:before, .block-image-gallery:after, .block-image-gallery .readmore-icons,
+//     .package-content:hover .btn, .block-2 .block-content:before, .banner-1, .label-block,
+//     .block-1 .block-content:before {
+//         background-color: @param1 !important;
+//     }
+//     .main-title .title:before, .tablist li .link:before, .block-image-gallery .content .title:before,
+//     .block-2 .block-content .title:before {
+//         background-color: @param2 !important;
+//     }
+//     .package-content:hover, .package-content:hover .btn {
+//         border-color: @param1 !important;
+//     }
+//     .header-main, .menu-wrapper > li.dropdown:hover > .sub-menu > li:nth-child(1),
+//     .mega-menu {
+//         border-color: @param2 !important;
+//     }
+//     .btn.main-color {
+//         background-color: @param1 !important;
+//         border-color: @param1 !important;
+//         &:hover {
+//             background-color: #fff !important;
+//         }
+//     }
+// }
+// .change-color-plumbing(@param) {
+//     .text-color, .number-phone, .slide-banner-1-item-wrapper .subtitle,
+//     .last-dif .last, .banner-5 .title, .tablist li.active .link, 
+//     .tablist li .link:hover, .block-info .block .link.date, .block-2 .block-content .title:hover,
+//     .testimonial-3 .image-wrapper:before, .testimonial-3 .name:hover, .testimonial-3 .position,
+//     .menu-wrapper .sub-menu > li:hover > a, .mega-menu-tablist li.active .link, .mega-menu-tablist li:hover .link,
+//     .mega-menu-wrapper .mega-menu-column .link:hover, .block-2 .block-content .readmore:hover,
+//     .block-1 .block-content .title:hover, .block-1 .block-content .readmore:hover, .button-search .icons:hover {
+//         color: @param !important;
+//     }
+//     .menu-wrapper > li > a:before, .block-service, .main-title .title:before,
+//     .tablist li .link:before, &.plumbing-fact, .block-2 .block-content .title:before,
+//     .block-2 .block-content:before, &.plumbing-banner-2, .label-block,
+//     .block-2 .block-content .progress-bar-wrapper .progress .progress-bar, .block-1 .block-content:before,
+//     .block-image-gallery .content .title:before, .block-image-gallery:after,
+//     .block-image-gallery .readmore-icons {
+//         background-color: @param !important;
+//     }
+//     .menu-wrapper > li.dropdown:hover > .sub-menu > li:nth-child(1), .mega-menu {
+//         border-color: @param !important;
+//     }
+//     .btn {
+//         &.white-color {
+//             &:hover {
+//                 color: @param !important;
+//             }
+//         }
+//         &.main-color {
+//             background-color: @param !important;
+//             border-color: @param !important;
+//             &:hover {
+//                 color: @param !important;
+//                 background-color: #fff !important;
+//             }
+//         }
+//     }
+// }

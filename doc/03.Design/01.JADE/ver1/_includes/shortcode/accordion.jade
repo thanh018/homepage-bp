@@ -1,0 +1,26 @@
+.block-accordion
+    #accordion.panel-group( role='tablist', aria-multiselectable='true')
+        .panel
+            #accordion-heading-1.panel-heading(role='tab')
+                a.panel-title(role='button', data-toggle='collapse', href='#accordion-1', aria-expanded='true', data-parent="#accordion")
+                    i.icons.fa.fa-minus
+                    | Something About Us
+            #accordion-1.panel-collapse.collapse.in(role='tabpanel')
+                .panel-body
+                   | Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo remque laudantium, totam rem aperiam.
+        .panel
+            #accordion-heading-2.panel-heading(role='tab')
+                a.panel-title.collapsed(role='button', data-toggle='collapse', href='#accordion-2', aria-expanded='true', data-parent="#accordion")
+                    i.icons.fa.fa-minus
+                    | Our Mission
+            #accordion-2.panel-collapse.collapse(role='tabpanel')
+                .panel-body
+                   | Enim ad minim veniam, quis nostrud exercitation ulla imco laboris un nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        .panel
+            #accordion-heading-3.panel-heading(role='tab')
+                a.panel-title.collapsed(role='button', data-toggle='collapse', href='#accordion-3', aria-expanded='true', data-parent="#accordion")
+                    i.icons.fa.fa-minus
+                    | Our Vision
+            #accordion-3.panel-collapse.collapse(role='tabpanel')
+                .panel-body
+                   | Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure do lor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occae cat cupidatat non proident.

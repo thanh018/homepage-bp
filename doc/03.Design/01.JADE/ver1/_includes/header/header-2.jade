@@ -1,0 +1,23 @@
+.header-wrapper.header-absolute.transparent
+	.header-topbar
+		.container
+			.topbar-list.pull-left
+				.item.topbar-hidden
+					i.topbar-icons.fa.fa-clock-o
+					p.topbar-text Mon - Sat at 7:00AM to 9:00PM
+				.item.topbar-hidden
+					i.topbar-icons.fa.fa-map-marker
+					p.topbar-text 30 Mortensen Avenue, Salinas, CA 93905
+			.topbar-list.pull-right
+				.item
+					i.topbar-icons.fa.fa-phone
+					.topbar-text Hotline: <a class="number-phone" href="tel:+123456789">+1 234 567 89</a>
+	.header-main
+		.container
+			!= partial("hamburger-menu")
+			.logo-wrapper
+				a.logo(href="index.html") 
+					img.img-responsive(src="assets/images/logos/logo-2.png", alt="")
+			.main-menu
+				!= partial("menu")
+			.clearfix

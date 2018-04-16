@@ -1,0 +1,121 @@
+.banner-pages.banner-projects
+    .container.container-wrapper
+        .banner-wrapper
+            .title-wrapper
+                h1.title projects 
+                .breadcrumb-wrapper
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a.breadcrumb-link(href="#") Home
+                        li.breadcrumb-item
+                            span.breadcrumb-active Projects
+            .banner-btn
+                a.btn.white-color(href="#") get in touch
+            .clearfix
+section.top-project.padding-top-100.padding-bottom-100
+    .container
+        .list-project
+            .item
+                .project-wrapper
+                    .project-info
+                        .main-title.margin-bottom-30
+                            h5.subtitle Our Projects
+                            h2.title Top Project
+                        h4.title-project Weathering the Storm
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                        p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat. Duis aute
+                        a.btn.main-color(href="#") read more
+                    .project-images
+                        !=partial("_includes/shortcode/slider-syncing", { image_1: "assets/images/post/image-19.jpg", image_2: "assets/images/post/image-2.jpg", image_3: "assets/images/post/image-3.jpg", image_4: "assets/images/post/image-4.jpg", image_5: "assets/images/post/image-5.jpg", image_6: "assets/images/post/image-6.jpg", image_7: "assets/images/post/image-7.jpg", image_8: "assets/images/post/image-8.jpg" } )
+            .item
+                .project-wrapper
+                    .project-info
+                        .main-title.margin-bottom-30
+                            h5.subtitle Our Projects
+                            h2.title Top Project
+                        h4.title-project Generator Design & Fabrication
+                        p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat
+                        p Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure do lor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        a.btn.main-color(href="#") read more
+                    .project-images
+                        !=partial("_includes/shortcode/slider-syncing", { image_1: "assets/images/post/image-20.jpg", image_2: "assets/images/post/image-12.jpg", image_3: "assets/images/post/image-13.jpg", image_4: "assets/images/post/image-14.jpg", image_5: "assets/images/post/image-15.jpg", image_6: "assets/images/post/image-16.jpg", image_7: "assets/images/post/image-17.jpg", image_8: "assets/images/post/image-18.jpg" })
+            .item
+                .project-wrapper
+                    .project-info
+                        .main-title.margin-bottom-30
+                            h5.subtitle Our Projects
+                            h2.title Top Project
+                        h4.title-project Construction
+                        p Enim ad minim veniam, quis nostrud exercitation ulla imco laboris un nisi ut aliquip ex ea commodo consequat, sunt in culpa qui officia deserunt mollit.
+                        p Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat. Duis aute. Ut enim ad minim veniam, 
+                        a.btn.main-color(href="#") read more
+                    .project-images
+                        !=partial("_includes/shortcode/slider-syncing", { image_1: "assets/images/post/image-1.jpg", image_2: "assets/images/post/image-5.jpg", image_3: "assets/images/post/image-19.jpg", image_4: "assets/images/post/image-16.jpg", image_5: "assets/images/post/image-3.jpg", image_6: "assets/images/post/image-6.jpg", image_7: "assets/images/post/image-17.jpg", image_8: "assets/images/post/image-2.jpg" })
+section.image-gallery.no-line.padding-top-100.padding-bottom-100.bg-light-blue
+    .container
+        .heading-main
+            .header-left
+                .main-title
+                    h5.subtitle what we did 
+                    h2.title our projects
+            .header-right
+                .gallery-image-nav
+                    ul.tab-filter.tablist
+                        li.tab.active(data-filter="*", data-category="all")
+                           .link all
+                        li.tab(data-filter=".tab-1", data-category="tab-1")
+                           .link contruction
+                        li.tab(data-filter=".tab-2", data-category="tab-2")
+                           .link interior
+                        li.tab(data-filter=".tab-3", data-category="tab-3")
+                           .link architect
+                        li.tab(data-filter=".tab-4", data-category="tab-4")
+                           .link building
+                        li.tab(data-filter=".tab-5", data-category="tab-5")
+                           .link plumbing
+            .clearfix
+        !=partial("_includes/list-gallery-9-item")
+        button.btn-loadmore.white
+            span.text load more
+            img.img-load(src="assets/images/gif/loading.gif" alt="")
+section.unconstruction.padding-top-100.padding-bottom-100
+    .container
+        .heading-main
+            .main-title
+                h5.subtitle our projects
+                h2.title unconstruction
+        .list-block.column-2
+            .item
+                .block-2
+                    .block-image
+                        img.img-full(src="assets/images/post/image-25.jpg", alt="")
+                        a.link(href="#")
+                    .block-content
+                        .progress-bar-wrapper
+                            .progress
+                                .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 55%")
+                            .text-left COMPLETION
+                            .text-right 55%        
+                        a.title(href="#") Steam Generator Design & Fabrication
+                        .description
+                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                        a.readmore-icons(href="#")
+                            i.icons.flaticon-bleed
+            .item
+                .block-2
+                    .block-image
+                        img.img-full(src="assets/images/post/image-23.jpg", alt="")
+                        a.link(href="#")
+                    .block-content
+                        .progress-bar-wrapper
+                            .progress
+                                .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 55%")
+                            .text-left COMPLETION
+                            .text-right 55%        
+                        a.title(href="#") Steam Generator Design & Fabrication
+                        .description
+                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                        a.readmore-icons(href="#")
+                            i.icons.flaticon-bleed
+        .banner-bottom
+            !=partial("_includes/shortcode/banner-1")

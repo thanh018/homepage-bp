@@ -1,0 +1,1181 @@
+section.slide-banner-1
+    .slide-banner-1-item
+        img.img-bg(src="assets/images/background/slider-banner-1.jpg", alt="")
+        .container.wrapper-item-content
+            .content
+                .slide-banner-1-item-wrapper
+                    h5.subtitle welcome to buildplus
+                    h1.title we build your best life
+                    p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    a.btn.main-color(href="#") view more
+    .slide-banner-1-item
+        img.img-bg(src="assets/images/background/slider-banner-2.jpg", alt="")
+        .container.wrapper-item-content
+            .content
+                .slide-banner-1-item-wrapper
+                    h5.subtitle welcome to buildplus
+                    h1.title we build your best life
+                    p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    a.btn.main-color(href="#") view more
+    .slide-banner-1-item
+        img.img-bg(src="assets/images/background/slider-banner-3.jpg", alt="")
+        .container.wrapper-item-content
+            .content
+                .slide-banner-1-item-wrapper
+                    h5.subtitle welcome to buildplus
+                    h1.title we build your best life
+                    p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    a.btn.main-color(href="#") view more
+section.shortcode.padding-top-100.padding-bottom-100
+    .container
+        .row
+            .col-xs-12.main-left
+                // TITLE
+                .row.padding-bottom-100
+                    .title-temp main title
+                    .col-md-6
+                        p mặc định
+                        .box
+                            .main-title
+                                h5.subtitle about us
+                                h2.title short code
+                    .col-md-6
+                        p muốn chuyển chữ sang màu trắng : thêm class "white" bọc bên ngoài
+                        .box.bg-blue.white
+                            .main-title
+                                h5.subtitle about us
+                                h2.title short code
+                    .col-md-6.margin-top-30
+                        p muốn chữ nằm giữa : thêm class "text-center" nằm cùng cấp class "main-title"
+                        .box
+                            .main-title.text-center
+                                h5.subtitle about us
+                                h2.title short code
+                    .col-md-6.margin-top-30
+                        p chữ cuối khác màu
+                        .box
+                            .main-title.last-dif
+                                h5.subtitle about us
+                                h2.title short 
+                                    span.last code
+                // BUTTON
+                .row.padding-bottom-100
+                    .title-temp button
+                    .col-md-4
+                        p Button mặc định
+                        .box
+                            a.btn(href="#") view our team
+                    .col-md-4
+                        p Add thêm class "main-color"
+                        .box
+                            a.btn.main-color(href="#") view our team
+                    .col-md-4
+                        p Add thêm class "white-color"
+                        .box.bg-blue
+                            a.btn.white-color(href="#") view our team
+                    .col-md-4.margin-top-30
+                        p Add thêm class "transparent"
+                        .box
+                            a.btn.transparent(href="#") view our team
+                    .col-md-4.margin-top-30
+                        p Add thêm class "transparent" + "main-color"
+                        .box
+                            a.btn.transparent.main-color(href="#") view our team
+                    .col-md-4.margin-top-30
+                        p Add thêm class "transparent" + "white-color"
+                        .box.bg-blue
+                            a.btn.transparent.white-color(href="#") view our team
+                    .col-md-4.margin-top-30
+                        p Btn có icons - khác btn ở trên
+                        .box
+                            a.btn-has-icon(href="#") 
+                                span.icons.fa.fa-file-text-o
+                                span.text Build-Plus.docx
+                    .col-md-4.margin-top-30
+                        p Btn down load
+                        .box.bg-blue
+                            .btn-download-wrapper
+                                .btn-download
+                                    span.icons.fa.fa-download
+                                    span.text download
+                                    span.icons.fa.fa-angle-right
+                                .btn-link
+                                    a.link(href="#")
+                                        i.icons.fa.fa-file-pdf-o
+                                        span.link-name PDF file
+                                    a.link(href="#")
+                                        i.icons.fa.fa-file-text-o
+                                        span.link-name WORD file
+                                    a.link(href="#")
+                                        i.icons.fa.fa-file-powerpoint-o
+                                        span.link-name Pow file
+                    .col-md-12.margin-top-30
+                        p Btn load more (có thêm js trong main.js, tìm ".btn-loadmore")
+                        .box.bg-blue
+                            button.btn-loadmore
+                                span.text load more
+                                img.img-load(src="assets/images/gif/loading.gif" alt="")
+                // PAGINATION
+                .row.padding-bottom-100
+                    .title-temp pagination
+                    .col-md-12
+                        .box
+                            !=partial("_includes/shortcode/pagination")
+                    .col-md-12.margin-top-30
+                        p Add thêm class "text-center"
+                        .box
+                            !=partial("_includes/shortcode/pagination", {class_more:"text-center"})
+                    .col-md-12.margin-top-30
+                        p Add thêm class "text-right"
+                        .box
+                            !=partial("_includes/shortcode/pagination", {class_more:"text-right"})
+                // TAB
+                .row.padding-bottom-100
+                    .title-temp Tab
+                    .col-md-12
+                        .box
+                            ul.tablist(role="tablist")
+                                li.active(role="presentation")
+                                    a.link(href="#1", role="tab", data-toggle="tab") all
+                                li(role="presentation")
+                                    a.link(href="#2", role="tab", data-toggle="tab") construction
+                                li(role="presentation")
+                                    a.link(href="#3", role="tab", data-toggle="tab") interior
+                                li(role="presentation")
+                                    a.link(href="#4", role="tab", data-toggle="tab") architect
+                                li(role="presentation")
+                                    a.link(href="#5", role="tab", data-toggle="tab") building
+                                li(role="presentation")
+                                    a.link(href="#6", role="tab", data-toggle="tab") plumbing
+                    .col-md-12.margin-top-30
+                        p Add thêm class "white" bao bên ngoài
+                        .box.bg-blue.white
+                            ul.tablist(role="tablist")
+                                li.active(role="presentation")
+                                    a.link(href="#1", role="tab", data-toggle="tab") all
+                                li(role="presentation")
+                                    a.link(href="#2", role="tab", data-toggle="tab") construction
+                                li(role="presentation")
+                                    a.link(href="#3", role="tab", data-toggle="tab") interior
+                                li(role="presentation")
+                                    a.link(href="#4", role="tab", data-toggle="tab") architect
+                                li(role="presentation")
+                                    a.link(href="#5", role="tab", data-toggle="tab") building
+                                li(role="presentation")
+                                    a.link(href="#6", role="tab", data-toggle="tab") plumbing
+                // BLOCK ICON 1
+                .row.padding-bottom-100
+                    .title-temp Block Icon 1
+                    .col-md-6
+                        .box
+                            .block-icon-1
+                                .icon-cell
+                                    .wrapper-icons
+                                        i.icons.fa.fa-forumbee
+                                .icon-cell
+                                    .wrapper-info
+                                        .title best house renovation
+                                        .text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    .col-md-8.margin-top-30
+                        p bao bọc các "block-icon" = "list-block-icon" vs "item"
+                        .box
+                            !=partial("_includes/shortcode/list-block-icon-1")
+                // BLOCK ICON 2
+                .row.padding-bottom-100
+                    .title-temp Block Icon 2
+                    .col-md-4
+                        .box
+                            .block-icon-2
+                                .icon-cell
+                                    .wrapper-icons
+                                        i.icons.fa.fa-magic
+                                .icon-cell
+                                    .wrapper-info
+                                        .title Planning
+                                        .text Dolor sit amet, consectetur adipisicing elit, dolor sit amet, consec tempor.
+                    .col-md-12.margin-top-30
+                        !=partial("_includes/shortcode/list-block-icon-2")
+                // BLOCK ICON 3
+                .row.padding-bottom-100
+                    .title-temp Block Icon 3
+                    .col-md-5
+                        .box
+                            .block-icon-3
+                                .icon-cell
+                                    .wrapper-icons
+                                        i.icons.flaticon-office
+                                .icon-cell
+                                    .wrapper-info
+                                        .title construction service
+                    .col-md-12.margin-top-30
+                        .row
+                            .col-md-5
+                                .box
+                                    !=partial("_includes/shortcode/list-block-icon-3")
+                // CONTACT INFO
+                .row.padding-bottom-100
+                    .title-temp contact info
+                    .col-md-4
+                        .box
+                            .contact-info-box
+                                .contact-info-cell
+                                    .wrapper-icons
+                                        i.icons.fa.fa-map-marker
+                                .contact-info-cell
+                                    .wrapper-info
+                                        p.text 7100 Athens Place Washington, DC 2150
+                    .col-md-4
+                        .box
+                            .contact-info-box
+                                .contact-info-cell
+                                    .wrapper-icons
+                                        i.icons.fa.fa-phone
+                                .contact-info-cell
+                                    .wrapper-info
+                                        p.text Hotline:
+                                            a.text-bold(href="tel:+123456789") +1 234 567 89
+                    .col-md-4
+                        .box
+                            .contact-info-box
+                                .contact-info-cell
+                                    .wrapper-icons
+                                        i.icons.fa.fa-envelope
+                                .contact-info-cell
+                                    .wrapper-info
+                                        .title title test
+                                        a.text.link(href="mailto:info@buildplus.com") info@buildplus.com
+                                        a.text.link(href="mailto:support@builplus.com") support@builplus.com
+                    .col-md-8.margin-top-30
+                        p bao bọc các "contact-info-box" = "list-contact-info" vs "item"
+                        .box
+                            !=partial("_includes/shortcode/list-contact-info")
+                // Blog, News, Post
+                .row.padding-bottom-100
+                    .title-temp Blog, News
+                    .col-md-5
+                        p BLOCK 1 - option 1
+                        .box
+                            .block-1
+                                .block-image
+                                    img.img-full(src="assets/images/post/image-6.jpg", alt="")
+                                    .label-block
+                                        .text-1 25.07
+                                        .text-2 2016
+                                        a.link-date(href="#")
+                                    a.link(href="#")
+                                .block-content
+                                    a.title(href="#") Construction
+                                    .description
+                                        p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                                    a.readmore(href="#")
+                                        span.text read more
+                                        i.icons.fa.fa-angle-double-right
+                    .col-md-5
+                        p BLOCK 1 - option 2
+                        .box
+                            .block-1
+                                .sticky-block
+                                    i.icons.fa.fa-bookmark
+                                .block-image
+                                    img.img-full(src="assets/images/post/image-1.jpg", alt="")
+                                    a.link(href="#")
+                                .block-info
+                                    .block
+                                        a.link(href="#") john doe
+                                    .block
+                                        p.link date:
+                                        a.link.date(href="#") 25.07.2016
+                                    .block
+                                        p.link 24 comments
+                                .block-content
+                                    a.title(href="#") Construction
+                                    .description
+                                        p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                                    a.readmore-icons(href="#")
+                                        i.icons.flaticon-bleed
+                    .col-md-5.margin-top-30
+                        p BLOCK 1 - option 3 (video)
+                        .box
+                            .block-1
+                                .block-image.block-video
+                                    .btn-play 
+                                        img.img-responsive(src="assets/images/more-images/btn-playvideo.png", alt="")
+                                    .btn-close
+                                        img.img-responsive(src="assets/images/more-images/btn-closevideo.png", alt="")
+                                    img.img-full(src="assets/images/post/image-2.jpg", alt="")
+                                    iframe.video-embed(src="https://www.youtube.com/embed/1k2NRnc9vQ4?rel=0" allowfullscreen)
+                                .block-info
+                                    .block
+                                        a.link(href="#") john doe
+                                    .block
+                                        p.link date:
+                                        a.link.date(href="#") 25.07.2016
+                                    .block
+                                        p.link 24 comments
+                                .block-content
+                                    a.title(href="#") Construction
+                                    .description
+                                        p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                                    a.readmore-icons(href="#")
+                                        i.icons.flaticon-bleed
+                    .col-md-5.margin-top-30
+                        p BLOCK 1 - option 4 (slide)
+                        .box
+                            .block-1
+                                .block-image.block-gallery-images
+                                    .gallery-images
+                                        .item
+                                            img.img-full(src="assets/images/post/image-7.jpg", alt="")
+                                        .item
+                                            img.img-full(src="assets/images/post/image-3.jpg", alt="")
+                                        .item
+                                            img.img-full(src="assets/images/post/image-8.jpg", alt="")
+                                .block-info
+                                    .block
+                                        a.link(href="#") john doe
+                                    .block
+                                        p.link date:
+                                        a.link.date(href="#") 25.07.2016
+                                    .block
+                                        p.link 24 comments
+                                .block-content
+                                    a.title(href="#") Construction
+                                    .description
+                                        p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                                    a.readmore-icons(href="#")
+                                        i.icons.flaticon-bleed
+                    .col-md-7.margin-top-30
+                        p BLOCK 2 - option 1
+                        .box
+                            .block-2
+                                .block-image
+                                    img.img-full(src="assets/images/post/image-5.jpg", alt="")
+                                    .label-block
+                                        .text-1 25.07
+                                        .text-2 2016
+                                        a.link-date(href="#")
+                                    a.link(href="#")
+                                .block-content
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 55%")
+                                        .text-left COMPLETION
+                                        .text-right 55%        
+                                    a.title(href="#") Steam Generator Design & Fabrication
+                                    .description
+                                        p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                    a.readmore(href="#")
+                                        span.text read more
+                                        i.icons.fa.fa-angle-double-right 
+                    .col-md-7.margin-top-30
+                        p BLOCK 2 - option 2
+                        .box
+                            .block-2
+                                .block-image
+                                    img.img-full(src="assets/images/post/image-4.jpg", alt="")
+                                    a.link(href="#")
+                                .block-content
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 55%")
+                                        .text-left COMPLETION
+                                        .text-right 55%        
+                                    a.title(href="#") Steam Generator Design & Fabrication
+                                    .description
+                                        p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                    a.readmore-icons(href="#")
+                                        i.icons.flaticon-bleed
+                    .col-md-7.margin-top-30
+                        p BLOCK 2 - option 3 (video)
+                        .box
+                            .block-2
+                                .block-image.block-video
+                                    .btn-play 
+                                        img.img-responsive(src="assets/images/more-images/btn-playvideo.png", alt="")
+                                    .btn-close
+                                        img.img-responsive(src="assets/images/more-images/btn-closevideo.png", alt="")
+                                    img.img-full(src="assets/images/post/image-7.jpg", alt="")
+                                    iframe.video-embed(src="https://www.youtube.com/embed/1k2NRnc9vQ4?rel=0" allowfullscreen)
+                                .block-content
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 55%")
+                                        .text-left COMPLETION
+                                        .text-right 55%        
+                                    a.title(href="#") Steam Generator Design & Fabrication
+                                    .description
+                                        p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                    a.readmore(href="#")
+                                        span.text read more
+                                        i.icons.fa.fa-angle-double-right 
+                    .col-md-7.margin-top-30
+                        p BLOCK 2 - option 4 (slide)
+                        .box
+                            .block-2
+                                .block-image.block-gallery-images
+                                    .gallery-images
+                                        .item
+                                            img.img-full(src="assets/images/post/image-2.jpg", alt="")
+                                        .item
+                                            img.img-full(src="assets/images/post/image-4.jpg", alt="")
+                                        .item
+                                            img.img-full(src="assets/images/post/image-3.jpg", alt="")
+                                .block-content
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 55%")
+                                        .text-left COMPLETION
+                                        .text-right 55%        
+                                    a.title(href="#") Steam Generator Design & Fabrication
+                                    .description
+                                        p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                    a.readmore(href="#")
+                                        span.text read more
+                                        i.icons.fa.fa-angle-double-right 
+                    .col-md-7.margin-top-30
+                        p BLOCK 2 - option 5 
+                        .box
+                            .block-2
+                                .block-image
+                                    img.img-full(src="assets/images/post/image-39.jpg", alt="")
+                                    .block-info
+                                        .block
+                                            p.link date:
+                                            a.link.date(href="#") 25.07.2016
+                                        .block
+                                            p.link 24 comments
+                                .block-content     
+                                    a.title(href="#") The Universe Through A Child S Eyes
+                                    .description
+                                        p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                // Block Service
+                .row.padding-bottom-100
+                    .title-temp Block Service
+                    .col-md-4
+                        .box
+                            .block-service
+                                .block-icons
+                                    i.flaticon-bathroom-tap-silhouette.icons
+                                .block-content
+                                    .title pipe repairing
+                                    .description Lorem ipsum dolor sit amet, consecte tur adipisicing elit, sed do.
+                                //- .wave-hover
+                                .water-hover
+                // Blog, News, Post Slider
+                .row.padding-bottom-100
+                    .title-temp Slider
+                    .col-md-12
+                        p khi gắn slide cho các block, gắn thêm class "slide-block" để ăn css cho arrows vs dots
+                        .slide-block.column-3
+                            .item
+                                .block-1
+                                    .block-image
+                                        img.img-full(src="assets/images/post/image-1.jpg", alt="")
+                                        a.link(href="#")
+                                    .block-info
+                                        .block
+                                            a.link(href="#") john doe
+                                        .block
+                                            p.link date:
+                                            a.link.date(href="#") 25.07.2016
+                                        .block
+                                            p.link 24 comments
+                                    .block-content
+                                        a.title(href="#") how to build a great house
+                                        .description
+                                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.readmore-icons(href="#")
+                                            i.icons.flaticon-bleed
+                            .item
+                                .block-1
+                                    .block-image
+                                        img.img-full(src="assets/images/post/image-2.jpg", alt="")
+                                        a.link(href="#")
+                                    .block-info
+                                        .block
+                                            a.link(href="#") john doe
+                                        .block
+                                            p.link date:
+                                            a.link.date(href="#") 25.07.2016
+                                        .block
+                                            p.link 24 comments
+                                    .block-content
+                                        a.title(href="#") the best team state
+                                        .description
+                                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.readmore-icons(href="#")
+                                            i.icons.flaticon-bleed
+                            .item
+                                .block-1
+                                    .block-image
+                                        img.img-full(src="assets/images/post/image-3.jpg", alt="")
+                                        a.link(href="#")
+                                    .block-info
+                                        .block
+                                            a.link(href="#") john doe
+                                        .block
+                                            p.link date:
+                                            a.link.date(href="#") 25.07.2016
+                                        .block
+                                            p.link 24 comments
+                                    .block-content
+                                        a.title(href="#") we help you fix your house
+                                        .description
+                                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.readmore-icons(href="#")
+                                            i.icons.flaticon-bleed
+                            .item
+                                .block-1
+                                    .block-image
+                                        img.img-full(src="assets/images/post/image-7.jpg", alt="")
+                                        a.link(href="#")
+                                    .block-info
+                                        .block
+                                            a.link(href="#") john doe
+                                        .block
+                                            p.link date:
+                                            a.link.date(href="#") 25.07.2016
+                                        .block
+                                            p.link 24 comments
+                                    .block-content
+                                        a.title(href="#") how to build a great house
+                                        .description
+                                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.readmore-icons(href="#")
+                                            i.icons.flaticon-bleed
+                            .item
+                                .block-1
+                                    .block-image
+                                        img.img-full(src="assets/images/post/image-8.jpg", alt="")
+                                        a.link(href="#")
+                                    .block-info
+                                        .block
+                                            a.link(href="#") john doe
+                                        .block
+                                            p.link date:
+                                            a.link.date(href="#") 25.07.2016
+                                        .block
+                                            p.link 24 comments
+                                    .block-content
+                                        a.title(href="#") the best team state
+                                        .description
+                                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.readmore-icons(href="#")
+                                            i.icons.flaticon-bleed
+                            .item
+                                .block-1
+                                    .block-image
+                                        img.img-full(src="assets/images/post/image-9.jpg", alt="")
+                                        a.link(href="#")
+                                    .block-info
+                                        .block
+                                            a.link(href="#") john doe
+                                        .block
+                                            p.link date:
+                                            a.link.date(href="#") 25.07.2016
+                                        .block
+                                            p.link 24 comments
+                                    .block-content
+                                        a.title(href="#") we help you fix your house
+                                        .description
+                                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.readmore-icons(href="#")
+                                            i.icons.flaticon-bleed
+                    .col-md-12.margin-top-30
+                        p khi gắn slide cho các block, gắn thêm class "slide-block" để ăn css cho arrows vs dots
+                        .slide-block.column-3
+                            .item
+                                .block-1
+                                    .block-image
+                                        img.img-full(src="assets/images/post/image-1.jpg", alt="")
+                                        a.link(href="#")
+                                    .block-info
+                                        .block
+                                            a.link(href="#") john doe
+                                        .block
+                                            p.link date:
+                                            a.link.date(href="#") 25.07.2016
+                                        .block
+                                            p.link 24 comments
+                                    .block-content
+                                        a.title(href="#") how to build a great house
+                                        .description
+                                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.readmore-icons(href="#")
+                                            i.icons.flaticon-bleed
+                            .item
+                                .block-1
+                                    .block-image
+                                        img.img-full(src="assets/images/post/image-2.jpg", alt="")
+                                        a.link(href="#")
+                                    .block-info
+                                        .block
+                                            a.link(href="#") john doe
+                                        .block
+                                            p.link date:
+                                            a.link.date(href="#") 25.07.2016
+                                        .block
+                                            p.link 24 comments
+                                    .block-content
+                                        a.title(href="#") the best team state
+                                        .description
+                                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.readmore-icons(href="#")
+                                            i.icons.flaticon-bleed
+                            .item
+                                .block-1
+                                    .block-image
+                                        img.img-full(src="assets/images/post/image-3.jpg", alt="")
+                                        a.link(href="#")
+                                    .block-info
+                                        .block
+                                            a.link(href="#") john doe
+                                        .block
+                                            p.link date:
+                                            a.link.date(href="#") 25.07.2016
+                                        .block
+                                            p.link 24 comments
+                                    .block-content
+                                        a.title(href="#") we help you fix your house
+                                        .description
+                                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.readmore-icons(href="#")
+                                            i.icons.flaticon-bleed
+                            .item
+                                .block-1
+                                    .block-image
+                                        img.img-full(src="assets/images/post/image-7.jpg", alt="")
+                                        a.link(href="#")
+                                    .block-info
+                                        .block
+                                            a.link(href="#") john doe
+                                        .block
+                                            p.link date:
+                                            a.link.date(href="#") 25.07.2016
+                                        .block
+                                            p.link 24 comments
+                                    .block-content
+                                        a.title(href="#") how to build a great house
+                                        .description
+                                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.readmore-icons(href="#")
+                                            i.icons.flaticon-bleed
+                            .item
+                                .block-1
+                                    .block-image
+                                        img.img-full(src="assets/images/post/image-8.jpg", alt="")
+                                        a.link(href="#")
+                                    .block-info
+                                        .block
+                                            a.link(href="#") john doe
+                                        .block
+                                            p.link date:
+                                            a.link.date(href="#") 25.07.2016
+                                        .block
+                                            p.link 24 comments
+                                    .block-content
+                                        a.title(href="#") the best team state
+                                        .description
+                                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.readmore-icons(href="#")
+                                            i.icons.flaticon-bleed
+                            .item
+                                .block-1
+                                    .block-image
+                                        img.img-full(src="assets/images/post/image-9.jpg", alt="")
+                                        a.link(href="#")
+                                    .block-info
+                                        .block
+                                            a.link(href="#") john doe
+                                        .block
+                                            p.link date:
+                                            a.link.date(href="#") 25.07.2016
+                                        .block
+                                            p.link 24 comments
+                                    .block-content
+                                        a.title(href="#") we help you fix your house
+                                        .description
+                                            p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.readmore-icons(href="#")
+                                            i.icons.flaticon-bleed
+                // Blog, News, Post List
+                .row.padding-bottom-100
+                    .title-temp List
+                    .col-md-12
+                        p list block (1, 2, 3, 4 column) đều dùng chung class "list-block", gắn thêm class "column-1,2,3,4"
+                        .box
+                            .list-block.column-2
+                                .item
+                                    .block-2
+                                        .block-image
+                                            img.img-full(src="assets/images/post/image-4.jpg", alt="")
+                                            .label-block
+                                                .text-1 25.07
+                                                .text-2 2016
+                                                a.link-date(href="#")
+                                            a.link(href="#")
+                                        .block-content
+                                            .progress-bar-wrapper
+                                                .progress
+                                                    .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 55%")
+                                                .text-left COMPLETION
+                                                .text-right 55%        
+                                            a.title(href="#") Steam Generator Design & Fabrication
+                                            .description
+                                                p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                            a.readmore(href="#")
+                                                span.text read more
+                                                i.icons.fa.fa-angle-double-right
+                                .item
+                                    .block-2
+                                        .block-image.block-video
+                                            .btn-play 
+                                                img.img-responsive(src="assets/images/more-images/btn-playvideo.png", alt="")
+                                            .btn-close
+                                                img.img-responsive(src="assets/images/more-images/btn-closevideo.png", alt="")
+                                            img.img-full(src="assets/images/post/image-7.jpg", alt="")
+                                            iframe.video-embed(src="https://www.youtube.com/embed/1k2NRnc9vQ4?rel=0" allowfullscreen)
+                                        .block-content
+                                            .progress-bar-wrapper
+                                                .progress
+                                                    .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 55%")
+                                                .text-left COMPLETION
+                                                .text-right 55%        
+                                            a.title(href="#") Steam Generator Design & Fabrication
+                                            .description
+                                                p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                            a.readmore(href="#")
+                                                span.text read more
+                                                i.icons.fa.fa-angle-double-right
+                    .col-md-12.margin-top-30
+                        .box
+                            .list-block.column-3
+                                .item
+                                    .block-1
+                                        .block-image
+                                            img.img-full(src="assets/images/post/image-10.jpg", alt="")
+                                            .label-block
+                                                .text-1 25.07
+                                                .text-2 2016
+                                                a.link-date(href="#")
+                                            a.link(href="#")
+                                        .block-content
+                                            a.title(href="#") Construction
+                                            .description
+                                                p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                                            a.readmore(href="#")
+                                                span.text read more
+                                                i.icons.fa.fa-angle-double-right
+                                .item
+                                    .block-1
+                                        .block-image
+                                            img.img-full(src="assets/images/post/image-1.jpg", alt="")
+                                            a.link(href="#")
+                                        .block-content
+                                            a.title(href="#") Construction
+                                            .description
+                                                p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                                            a.readmore(href="#")
+                                                span.text read more
+                                                i.icons.fa.fa-angle-double-right
+                                .item
+                                    .block-1
+                                        .block-image
+                                            img.img-full(src="assets/images/post/image-8.jpg", alt="")
+                                            a.link(href="#")
+                                        .block-content
+                                            a.title(href="#") Construction
+                                            .description
+                                                p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                                            a.readmore(href="#")
+                                                span.text read more
+                                                i.icons.fa.fa-angle-double-right
+                // GALLERY
+                .row.padding-bottom-100
+                    .title-temp image gallery
+                    .col-md-5
+                        .box
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-21.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title White Villa In San Francisco
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                    .col-md-12.margin-top-30
+                        p Dùng lại class slide ở trên (block slide)
+                        !=partial("_includes/shortcode/slide-gallery-3-column")
+                    .col-md-12.margin-top-30
+                        p list 4 item không spacing (trường hợp dành riêng cho images gallery)
+                        !=partial("_includes/shortcode/list-gallery-4-item", { link_1:"Architect", title_1: "Villa In San Francisco", image_1:"assets/images/post/image-27.jpg", link_2:"Architect", title_2: "phu quoc restaurant", image_2:"assets/images/post/image-26.jpg", link_3:"Architect", title_3: "tokyo villa", image_3:"assets/images/post/image-25.jpg", link_4:"Architect", title_4: "Vix lorem pericula ex", image_4:"assets/images/post/image-28.jpg"})
+                    .col-md-12.margin-top-30
+                        p Isotop 1 (vào main.js gõ "Isotop" sẽ kiếm ra đoạn mã isotop, bên chị tiên không cần custom lại js nữa, em đã chỉnh 1 js chạy cho tất cả các isotop )
+                        .box
+                            !=partial("_includes/shortcode/isotop-gallery-1")
+                    .col-md-12.margin-top-30
+                        p Isotop 2
+                        .box
+                            !=partial("_includes/shortcode/isotop-gallery-2")
+                    .col-md-12.margin-top-30
+                        p Isotop 3
+                        .box
+                            !=partial("_includes/shortcode/isotop-gallery-3")
+                    .col-md-12.margin-top-30
+                        p Isotop 4
+                        .box
+                            !=partial("_includes/shortcode/isotop-gallery-4")
+                // TEAM
+                .row.padding-bottom-100
+                    .title-temp Team
+                    .col-md-4
+                        .box
+                            .block-team
+                                .block-image
+                                    img.img-responsive(src="assets/images/team/image-1.png", alt="")
+                                    a.link(href="#")
+                                .block-content
+                                    a.title(href="#") Samuel Wilton
+                                    .position Expert Staff
+                                    .social-list
+                                        a.item(href="#")
+                                            i.icons.fa.fa-facebook
+                                        a.item(href="#")
+                                            i.icons.fa.fa-twitter
+                                        a.item(href="#")
+                                            i.icons.fa.fa-google-plus
+                // SLIDE TEAM
+                .row.padding-bottom-100
+                    .title-temp Slide Team
+                    .col-md-12
+                        .box
+                            !=partial("_includes/shortcode/slide-team-4-column")
+                // LIST TEAM
+                .row.padding-bottom-100
+                    .title-temp List Team
+                    .col-md-12
+                        .box
+                            !=partial("_includes/shortcode/list-block-team")
+                // BLOCK VIDEO
+                .row.padding-bottom-100
+                    .col-md-5
+                        .title-temp block video
+                        .box
+                            .block-video
+                                .btn-play 
+                                    img.img-responsive(src="assets/images/more-images/btn-playvideo.png", alt="")
+                                .btn-close
+                                    img.img-responsive(src="assets/images/more-images/btn-closevideo.png", alt="")
+                                img.img-full(src="assets/images/post/image-1.jpg", alt="")
+                                iframe.video-embed(src="https://www.youtube.com/embed/1k2NRnc9vQ4?rel=0" allowfullscreen)
+                // TESTIMONIAL 1
+                .row.padding-bottom-100
+                    .col-md-6
+                        .title-temp testimonial 1
+                        .box
+                            !=partial("_includes/shortcode/testimonial-1")
+                    .col-md-6
+                        .title-temp testimonial 1
+                        .box.bg-blue.white
+                            !=partial("_includes/shortcode/testimonial-1")
+                // TESTIMONIAL 2
+                .row.padding-bottom-100
+                    .col-md-12
+                        .title-temp testimonial 2
+                        .box
+                            !=partial("_includes/shortcode/testimonial-2")
+                    .col-md-12.margin-top-30
+                        .box.bg-blue.white
+                            !=partial("_includes/shortcode/testimonial-2")
+                // TESTIMONIAL 3
+                .row.padding-bottom-100
+                    .col-md-6
+                        .title-temp testimonial 3
+                        .box
+                            !=partial("_includes/shortcode/testimonial-3")
+                // SLIDE LOGO
+                .row.padding-bottom-100
+                    .col-md-6
+                        .title-temp slide logo
+                        .box.bg-blue.white
+                            !=partial("_includes/shortcode/list-logo") 
+                // COUNT NUMBER
+                .row.padding-bottom-100
+                    .title-temp count number
+                    .col-md-3
+                        .box
+                            .count-number
+                                i.icons.fa.fa-building-o
+                                h4.number(data-from="0" data-to="1489" data-speed="1500") 0
+                                p.name project completed
+                    .col-md-3
+                        .box.bg-blue.white
+                            .count-number
+                                i.icons.fa.fa-building-o
+                                h4.number(data-from="0" data-to="1489" data-speed="1500") 0
+                                p.name project completed
+                    .col-md-12.margin-top-30
+                        .box.bg-blue.white
+                            !=partial("_includes/shortcode/list-count-to") 
+                // ACCORDION
+                .row.padding-bottom-100
+                    .col-md-6
+                        .title-temp Accordion
+                        .box
+                            !=partial("_includes/shortcode/accordion") 
+                    .col-md-6
+                        .title-temp list
+                        .box
+                            ul.list-style-icon
+                                li
+                                    i.icons.fa.fa-crosshairs
+                                    p.text Dolore eu fugiat nulla pariatur excepteur sint occaecat.
+                                li
+                                    i.icons.fa.fa-caret-square-o-right
+                                    p.text Duis aute irure dolor in reprehenderit in voluptate.
+                                li
+                                    i.icons.fa.fa-check
+                                    p.text Duis aute irure dolor in reprehenderit in.
+                                li
+                                    i.icons.fa.fa-plus
+                                    p.text Dolore eu fugiat nulla pariatur excepteur sint occaecat.
+                // BANNER 1
+                .row.padding-bottom-100
+                    .title-temp banner 1
+                    .col-md-10
+                        .box
+                            !=partial("_includes/shortcode/banner-1") 
+                // BANNER 2
+                .row.padding-bottom-100
+                    .title-temp banner 2
+                    .col-md-12
+                        .yellow-box
+                            !=partial("_includes/shortcode/banner-2")
+                // BANNER 3
+                .row.padding-bottom-100
+                    .title-temp banner 3
+                    .col-md-12
+                        .box
+                            !=partial("_includes/shortcode/banner-3")
+                // BANNER 4
+                .row.padding-bottom-100
+                    .title-temp banner 4
+                    .col-md-12
+                        .blue-box
+                            !=partial("_includes/shortcode/banner-4")
+                // BANNER 5 OUT OF GRID
+                .row.padding-bottom-100
+                    .title-temp banner 5 out of grid
+                    !=partial("_includes/shortcode/banner-5")
+                // BANNER 6
+                .row.padding-bottom-100
+                    .title-temp banner 6
+                    .blue-box
+                        !=partial("_includes/shortcode/banner-6")
+                // SLIDER SYNCING
+                .row.padding-bottom-100
+                    .col-md-7
+                        .title-temp SLIDER SYNCING
+                        .box
+                            !=partial("_includes/shortcode/slider-syncing", { image_1: "assets/images/post/image-19.jpg", image_2: "assets/images/post/image-2.jpg", image_3: "assets/images/post/image-3.jpg", image_4: "assets/images/post/image-4.jpg", image_5: "assets/images/post/image-5.jpg", image_6: "assets/images/post/image-6.jpg", image_7: "assets/images/post/image-7.jpg", image_8: "assets/images/post/image-8.jpg" } )
+                    .col-md-12.margin-top-30
+                        .list-project
+                            .item
+                                .project-wrapper
+                                    .project-info
+                                        .main-title.margin-bottom-30
+                                            h5.subtitle Our Projects
+                                            h2.title Top Project
+                                        h4.title-project Weathering the Storm
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                        p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat. Duis aute
+                                        a.btn.main-color(href="#") read more
+                                    .project-images
+                                        !=partial("_includes/shortcode/slider-syncing", { image_1: "assets/images/post/image-19.jpg", image_2: "assets/images/post/image-2.jpg", image_3: "assets/images/post/image-3.jpg", image_4: "assets/images/post/image-4.jpg", image_5: "assets/images/post/image-5.jpg", image_6: "assets/images/post/image-6.jpg", image_7: "assets/images/post/image-7.jpg", image_8: "assets/images/post/image-8.jpg" } )
+                            .item
+                                .project-wrapper
+                                    .project-info
+                                        .main-title.margin-bottom-30
+                                            h5.subtitle Our Projects
+                                            h2.title Top Project
+                                        h4.title-project Generator Design & Fabrication
+                                        p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat
+                                        p Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure do lor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                        a.btn.main-color(href="#") read more
+                                    .project-images
+                                        !=partial("_includes/shortcode/slider-syncing", { image_1: "assets/images/post/image-20.jpg", image_2: "assets/images/post/image-12.jpg", image_3: "assets/images/post/image-13.jpg", image_4: "assets/images/post/image-14.jpg", image_5: "assets/images/post/image-15.jpg", image_6: "assets/images/post/image-16.jpg", image_7: "assets/images/post/image-17.jpg", image_8: "assets/images/post/image-18.jpg" })
+                            .item
+                                .project-wrapper
+                                    .project-info
+                                        .main-title.margin-bottom-30
+                                            h5.subtitle Our Projects
+                                            h2.title Top Project
+                                        h4.title-project Construction
+                                        p Enim ad minim veniam, quis nostrud exercitation ulla imco laboris un nisi ut aliquip ex ea commodo consequat, sunt in culpa qui officia deserunt mollit.
+                                        p Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat. Duis aute. Ut enim ad minim veniam, 
+                                        a.btn.main-color(href="#") read more
+                                    .project-images
+                                        !=partial("_includes/shortcode/slider-syncing", { image_1: "assets/images/post/image-1.jpg", image_2: "assets/images/post/image-5.jpg", image_3: "assets/images/post/image-19.jpg", image_4: "assets/images/post/image-16.jpg", image_5: "assets/images/post/image-3.jpg", image_6: "assets/images/post/image-6.jpg", image_7: "assets/images/post/image-17.jpg", image_8: "assets/images/post/image-2.jpg" })
+                // SLIDER VERTICAL
+                .row.padding-bottom-100
+                    .col-md-12
+                        .title-temp SLIDER VERTICAL
+                        .box
+                            !=partial("_includes/shortcode/slider-syncing-1")
+                // RECENT POST
+                .row.padding-bottom-100
+                    .col-md-6.margin-bottom-50
+                        .box
+                            .recent-post-inner
+                                .media
+                                    .media-left
+                                        a.wrapper-image(href="#")
+                                            img.media-object(src="assets/images/post/image-1.jpg", alt="")
+                                    .media-right
+                                        .meta
+                                            .meta-info.time
+                                                | Date:
+                                                a(href="#").link 25.04.2016
+                                            .meta-info.author-2
+                                                | By
+                                                a(href="#").link John Doe
+                                            .meta-info.view
+                                                i.icon-meta.fa.fa-eye
+                                                a(href="#").link 100
+                                            .meta-info.comment
+                                                i.icon-meta.fa.fa-comments
+                                                a(href="#").link 20
+                                        a.media-heading(href="#") We Build Your Best Home With Our Best Servieces
+                    .col-md-6.margin-bottom-50
+                        .box
+                            .recent-post-inner
+                                .media.style-2
+                                    .meta
+                                        i.icons.fa.fa-bookmark
+                                        .meta-info.time
+                                            | Date:
+                                            a(href="#").link 25.04.2016
+                                        .meta-info.view
+                                            i.icon-meta.fa.fa-eye
+                                            a(href="#").link 100
+                                        .meta-info.comment
+                                            i.icon-meta.fa.fa-comments
+                                            a(href="#").link 20
+                                    .media-left
+                                        a.wrapper-image(href="#")
+                                            img.media-object(src="assets/images/post/image-1.jpg", alt="")
+                                    .media-right
+                                        a.media-heading(href="#") How To Build A Villa With Green Garden And Big Swimming Pool
+                    .col-md-6
+                        .box
+                            .recent-post-inner
+                                .media.style-3
+                                    .media-left
+                                        a.wrapper-image(href="#")
+                                            img.media-object(src="assets/images/post/image-1.jpg", alt="")
+                                    .media-right
+                                        a.media-heading(href="#") 'War on Drugs' has Failed Public Health
+                                        .meta
+                                            .meta-info
+                                                | By
+                                                a(href="#").link John Doe
+                                            .meta-info
+                                                | 24 
+                                                a(href="#").link comments
+                                            .meta-info
+                                                | 10
+                                                a(href="#").link view
+                    .col-md-6
+                        .box
+                            .recent-post-inner
+                                .media.style-4
+                                    .media-left
+                                        a.wrapper-image(href="#")
+                                            img.media-object(src="assets/images/post/image-1.jpg", alt="")
+                                    .media-right
+                                        a.media-heading(href="#") We Build Your Best Home With Our Best Servieces
+                                        p.media-description Easy buying the right telescope to take your love to the next level is a big next step.
+                // PRICING PLAN
+                .row.padding-bottom-100
+                    .title-temp PRICING PLAN
+                    .col-md-4
+                        .box
+                            .package-content
+                                .title single visit
+                                .description Extra charges are based on extra work taken.
+                                .price 
+                                    sup.unit $
+                                    | 25
+                                    span.per / visit
+                                a(href="#").btn choose one
+                // CONTACT FORM
+                .row.padding-bottom-100
+                    .title-temp CONTACT FORM
+                    .col-md-7
+                        .box
+                            !=partial("_includes/shortcode/contact-form")
+                    
+                // Map
+                .row.padding-bottom-100
+                    .title-temp CONTACT FORM
+                    .col-md-12
+                        .contact-map
+                            #map
+                            .container
+                                .row
+                                    .col-md-6.pull-right
+                                        !=partial("_includes/shortcode/contact-form")
+                // COMING SOON
+                .row.padding-bottom-100
+                    .title-temp coming soon
+                    .col-md-12
+                        !=partial("_includes/shortcode/coming-soon")
+                // WIDGET
+                .row.padding-bottom-100
+                    .title-temp WIDGET
+                    .box
+                        .row.margin-bottom-50
+                            .col-sm-4
+                                !=partial("_includes/widgets/categories")
+                            .col-sm-4
+                                !=partial("_includes/widgets/recent-post")
+                            .col-sm-4
+                                !=partial("_includes/widgets/archive")
+                        .row.margin-bottom-50
+                            .col-sm-4
+                                !=partial("_includes/widgets/tags")
+                            .col-sm-4
+                                !=partial("_includes/widgets/about-us")
+                            .col-sm-4
+                                !=partial("_includes/widgets/recent-post-2")
+                        .row
+                            .col-sm-4
+                                !=partial("_includes/widgets/search") 
+                            .col-sm-4
+                                !=partial("_includes/widgets/send-mail") 
+                            .col-sm-4
+                                !=partial("_includes/widgets/banner-adv")
+
+                    .box.bg-blue.white.margin-top-50
+                        .row.margin-bottom-50
+                            .col-sm-4
+                                !=partial("_includes/widgets/categories")
+                            .col-sm-4
+                                !=partial("_includes/widgets/recent-post")
+                            .col-sm-4
+                                !=partial("_includes/widgets/archive")
+                        .row.margin-bottom-50
+                            .col-sm-4
+                                !=partial("_includes/widgets/tags")
+                            .col-sm-4
+                                !=partial("_includes/widgets/about-us")
+                            .col-sm-4
+                                !=partial("_includes/widgets/recent-post-2")
+                        .row
+                            .col-sm-4
+                                !=partial("_includes/widgets/search")
+                            .col-sm-4
+                                !=partial("_includes/widgets/send-mail")
+                            .col-sm-4
+                                !=partial("_includes/widgets/banner-adv")
+                                

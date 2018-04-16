@@ -1,0 +1,453 @@
+ul.nav.navbar-nav.nav-menu.menu-wrapper
+    li.menu-item.dropdown(class="#{ current.source == 'index' || current.source == 'homepage-2' || current.source == 'homepage-3' || current.source == 'homepage-cleaning' || current.source == 'homepage-plumbing' ? 'current-menu-item' : '' }")
+        a(href="javascript:void(0)")
+            span.text Home
+            span.icons.fa.fa-angle-down
+        ul.sub-menu
+            li.menu-item
+                a(href="index.html")
+                    span.text Homepage Default
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="homepage-2.html")
+                    span.text Homepage 2
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="homepage-3.html")
+                    span.text Homepage 3
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="homepage-cleaning.html")
+                    span.text Homepage Cleaning
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="homepage-plumbing.html")
+                    span.text Homepage Plumbing
+                    span.icons.fa.fa-angle-right
+    li.menu-item.dropdown
+        a(href="javascript:void(0)")
+            span.text Tab Menu
+            span.icons.fa.fa-angle-down
+        .mega-menu
+            ul.mega-menu-tablist(role="tablist")
+                li.active(role="presentation")
+                    a.link(href="#tab1", role="tab", data-toggle="tab") all
+                li(role="presentation")
+                    a.link(href="#tab2", role="tab", data-toggle="tab") construction
+                li(role="presentation")
+                    a.link(href="#tab3", role="tab", data-toggle="tab") interior
+                li(role="presentation")
+                    a.link(href="#tab4", role="tab", data-toggle="tab") architect
+            .mega-menu-tab-content.tab-content
+                #tab1.tab-pane.fade.in.active(role="tabpanel")
+                    .list-block.column-2
+                        .item
+                            .block-2
+                                .block-image
+                                    img.img-full(src="assets/images/post/image-4.jpg", alt="")
+                                    .label-block
+                                        .text-1 25.07
+                                        .text-2 2016
+                                        a.link-date(href="#")
+                                    a.link(href="#")
+                                .block-content
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 55%")
+                                        .text-left COMPLETION
+                                        .text-right 55%        
+                                    a.title(href="#") Steam Generator Design & Cation
+                                    .description
+                                        p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                    a.readmore(href="#")
+                                        span.text read more
+                                        i.icons.fa.fa-angle-double-right
+                        .item
+                            .block-2
+                                .block-image.block-video
+                                    .btn-play 
+                                        img.img-responsive(src="assets/images/more-images/btn-playvideo.png", alt="")
+                                    .btn-close
+                                        img.img-responsive(src="assets/images/more-images/btn-closevideo.png", alt="")
+                                    img.img-full(src="assets/images/post/image-7.jpg", alt="")
+                                    iframe.video-embed(src="https://www.youtube.com/embed/1k2NRnc9vQ4?rel=0" allowfullscreen)
+                                .block-content
+                                    .progress-bar-wrapper
+                                        .progress
+                                            .progress-bar.progress-bar-striped.active(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 55%")
+                                        .text-left COMPLETION
+                                        .text-right 55%        
+                                    a.title(href="#") Construction Design & Fabri
+                                    .description
+                                        p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                    a.readmore(href="#")
+                                        span.text read more
+                                        i.icons.fa.fa-angle-double-right
+                #tab2.tab-pane.fade(role="tabpanel")
+                    .list-block.column-3
+                        .item
+                            .block-1
+                                .block-image
+                                    img.img-full(src="assets/images/post/image-10.jpg", alt="")
+                                    a.link(href="#")
+                                .block-content
+                                    a.title(href="#") Construction
+                                    .description
+                                        p.text Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    a.readmore(href="#")
+                                        span.text read more
+                                        i.icons.fa.fa-angle-double-right
+                        .item
+                            .block-1
+                                .block-image
+                                    img.img-full(src="assets/images/post/image-1.jpg", alt="")
+                                    a.link(href="#")
+                                .block-content
+                                    a.title(href="#") Construction
+                                    .description
+                                        p.text Sed do eiusmod tempor incididunt ut, dolor sit amet.
+                                    a.readmore(href="#")
+                                        span.text read more
+                                        i.icons.fa.fa-angle-double-right
+                        .item
+                            .block-1
+                                .block-image
+                                    img.img-full(src="assets/images/post/image-8.jpg", alt="")
+                                    a.link(href="#")
+                                .block-content
+                                    a.title(href="#") Construction
+                                    .description
+                                        p.text Consectetur adipisicing elit, sed do eiusmod tempor.
+                                    a.readmore(href="#")
+                                        span.text read more
+                                        i.icons.fa.fa-angle-double-right
+                #tab3.tab-pane.fade(role="tabpanel")
+                    .list-image-gallery
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-27.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title Villa In San
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-26.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title phu quoc res
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-25.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title tokyo villa
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-28.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title DB restaurant
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-29.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title Villa In San
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-30.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title phu quoc res
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-22.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title tokyo villa
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-20.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title DB restaurant
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                #tab4.tab-pane.fade(role="tabpanel")
+                    .list-block.column-3
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-1.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title Villa In San
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-2.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title Villa In San
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-3.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title Villa In San
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-4.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title Villa In San
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-5.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title Villa In San
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+                        .item
+                            .block-image-gallery
+                                img.img-full(src="assets/images/post/image-6.jpg", alt="")
+                                .bg-hover
+                                .content
+                                    a.link(href="#") Architect
+                                    .title Villa In San
+                                a.readmore-icons(href="#")
+                                    i.icons.flaticon-bleed
+            .clearfix
+    li.menu-item.dropdown
+        a(href="javascript:void(0)")
+            span.text Mega Menu
+            span.icons.fa.fa-angle-down
+        .mega-menu
+            ul.mega-menu-wrapper.column-4
+                li.mega-menu-column
+                    a.title(href="#") sample 1
+                    ul.list-link
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-university
+                                span.text sample 1
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-binoculars
+                                span.text sample 1
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-cube
+                                span.text sample 1
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-industry
+                                span.text sample 1
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-ticket
+                                span.text sample 1
+
+                li.mega-menu-column
+                    a.title(href="#") sample 2
+                    ul.list-link
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-truck
+                                span.text sample 2
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-hourglass-half
+                                span.text sample 2
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-taxi
+                                span.text sample 2
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-ship
+                                span.text sample 2
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-industry
+                                span.text sample 2
+                li.mega-menu-column
+                    a.title(href="#") sample 3
+                    ul.list-link
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-bed
+                                span.text sample 3
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-bug
+                                span.text sample 3
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-cubes 
+                                span.text sample 3
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-diamond
+                                span.text sample 3
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-gift
+                                span.text sample 3
+                li.mega-menu-column
+                    a.title(href="#") sample 4
+                    ul.list-link
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-shopping-basket 
+                                span.text sample 4
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-shield
+                                span.text sample 4
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-signal
+                                span.text sample 4
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-star-half-o
+                                span.text sample 4
+                        li
+                            a(href="#").link
+                                i.icons.fa.fa-camera-retro
+                                span.text sample 4
+    li.menu-item.dropdown(class="#{ current.source == 'projects' || current.source == 'project-detail' || current.source == 'gallery-masonry' || current.source == 'gallery-3col' || current.source == 'gallery-variation' ? 'current-menu-item' : '' }")
+        a(href="javascript:void(0)")
+            span.text Project
+            span.icons.fa.fa-angle-down
+        ul.sub-menu
+            li.menu-item
+                a(href="projects.html")
+                    span.text Project List
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="project-detail.html")
+                    span.text Project Detail
+                    span.icons.fa.fa-angle-right
+            li.menu-item.dropdown
+                a(href="javascript:void(0)")
+                    span.text Gallery
+                    span.icons.fa.fa-angle-right
+                ul.sub-menu.left
+                    li.menu-item
+                        a(href="gallery-3col.html")
+                            span.text Gallery 3 Column
+                            span.icons.fa.fa-angle-right
+                    li.menu-item
+                        a(href="gallery-variation.html")
+                            span.text Gallery Variation
+                            span.icons.fa.fa-angle-right
+                    li.menu-item
+                        a(href="gallery-masonry.html")
+                            span.text Gallery Masonry
+                            span.icons.fa.fa-angle-right
+    li.menu-item.dropdown(class="#{ current.source == 'blogs' || current.source == 'blogs-sidebar-left'  || current.source == 'blogs-2column' || current.source == 'blogs-2column-nosidebar' || current.source == 'blogs-3column' || current.source == 'blog-detail' || current.source == 'blog-detail-sidebar-left' ? 'current-menu-item' : '' }")
+        a(href="javascript:void(0)")
+            span.text Blog
+            span.icons.fa.fa-angle-down
+        ul.sub-menu
+            li.menu-item
+                a(href="blogs.html")
+                    span.text Blog List
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="blogs-sidebar-left.html")
+                    span.text Blog List sidebar left
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="blogs-2column.html")
+                    span.text Blog 2 column
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="blogs-2column-nosidebar.html")
+                    span.text Blog 2 column no sidebar
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="blogs-3column.html")
+                    span.text Blog 3 column
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="blog-detail.html")
+                    span.text Blog Detail
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="blog-detail-sidebar-left.html")
+                    span.text Blog Detail sidebar left
+                    span.icons.fa.fa-angle-right
+    li.menu-item.dropdown(class="#{ current.source == 'about' || current.source == 'team' || current.source == 'team-member' || current.source == 'services' || current.source == 'service-detail' || current.source == 'contact' ? 'current-menu-item' : '' }")
+        a(href="javascript:void(0)")
+            span.text Pages
+            span.icons.fa.fa-angle-down
+        ul.sub-menu
+            li.menu-item
+                a(href="about.html")
+                    span.text About
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="team.html")
+                    span.text Team
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="team-member.html")
+                    span.text Team Member
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="services.html")
+                    span.text Services
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="service-detail.html")
+                    span.text Service Detail
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="contact.html")
+                    span.text Contact
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="coming-soon.html")
+                    span.text Coming Soon
+                    span.icons.fa.fa-angle-right
+            li.menu-item
+                a(href="404.html")
+                    span.text page 404
+                    span.icons.fa.fa-angle-right

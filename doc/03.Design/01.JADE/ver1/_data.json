@@ -1,0 +1,307 @@
+{
+    "shortcode": {
+        "title": "Shortcode",
+        "nav": "Shortcode",
+        "url_style": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css"
+            }
+        ],
+        "url_script": [
+            {
+                "src":"https://maps.googleapis.com/maps/api/js?key=AIzaSyAu6tm60TzeUo9rWpLnrQ7mrFn4JPMVje4&amp;sensor=false"
+            },
+            {
+                "src": "assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
+            },
+            {
+                "src": "assets/js/pages/map.js"
+            },
+            {
+                "src": "assets/js/pages/coming-soon.js"
+            },
+            {
+                "src": "assets/js/pages/date-time.js"
+            }
+        ]
+    },
+    "index": {
+        "title": "Homepage",
+        "nav": "Homepage",
+        "url_style": [
+        ],
+        "url_script": [
+            {
+                "src": "assets/js/pages/homepage.js"
+            }
+        ]
+    },
+    "homepage-2": {
+        "title": "Homepage 2",
+        "nav": "Homepage 2",
+        "url_style": [
+        ],
+        "url_script": [
+            {
+                "src": "assets/js/pages/homepage.js"
+            }
+        ]
+    },
+    "homepage-3": {
+        "title": "Homepage 3",
+        "nav": "Homepage 3",
+        "url_style": [
+        ],
+        "url_script": [
+        ]
+    },
+    "homepage-cleaning": {
+        "title": "Homepage Cleaning",
+        "nav": "Homepage Cleaning",
+        "url_style": [
+        ],
+        "url_script": [
+        ]
+    },
+    "homepage-plumbing": {
+        "title": "Homepage Plumbing",
+        "nav": "Homepage Plumbing",
+        "url_style": [
+        ],
+        "url_script": [
+        ]
+    },
+    "about": {
+        "title": "About",
+        "nav": "About",
+        "url_style": [
+        ],
+        "url_script": [
+        ]
+    },
+    "services": {
+        "title": "Services",
+        "nav": "Services",
+        "url_style": [
+        ],
+        "url_script": [
+        ]
+    },
+    "service-detail": {
+        "title": "Service Detail",
+        "nav": "Service Detail",
+        "url_style": [
+        ],
+        "url_script": [
+        ]
+    },
+    "projects": {
+        "title": "Projects",
+        "nav": "Projects",
+        "url_style": [
+        ],
+        "url_script": [
+        ]
+    },
+    "project-detail": {
+        "title": "Project Detail",
+        "nav": "Project Detail",
+        "url_style": [
+        ],
+        "url_script": [
+        ]
+    },
+    "team": {
+        "title": "Team",
+        "nav": "Team",
+        "url_style": [
+        ],
+        "url_script": [
+        ]
+    },
+    "team-member": {
+        "title": "Team Member",
+        "nav": "Team Member",
+        "url_style": [
+        ],
+        "url_script": [
+        ]
+    },
+    "blogs": {
+        "title": "Blogs",
+        "nav": "Blogs",
+        "url_style": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css"
+            }
+        ],
+        "url_script": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
+            },
+            {
+                "src": "assets/js/pages/date-time.js"
+            }
+        ]
+    },
+    "blogs-2column": {
+        "title": "Blogs",
+        "nav": "Blogs",
+        "url_style": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css"
+            }
+        ],
+        "url_script": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
+            },
+            {
+                "src": "assets/js/pages/date-time.js"
+            }
+        ]
+    },
+    "blogs-2column-nosidebar": {
+        "title": "Blogs",
+        "nav": "Blogs",
+        "url_style": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css"
+            }
+        ],
+        "url_script": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
+            },
+            {
+                "src": "assets/js/pages/date-time.js"
+            }
+        ]
+    },
+    "blogs-3column": {
+        "title": "Blogs",
+        "nav": "Blogs",
+        "url_style": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css"
+            }
+        ],
+        "url_script": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
+            },
+            {
+                "src": "assets/js/pages/date-time.js"
+            }
+        ]
+    },
+    "blogs-sidebar-left": {
+        "title": "Blogs",
+        "nav": "Blogs",
+        "url_style": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css"
+            }
+        ],
+        "url_script": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
+            },
+            {
+                "src": "assets/js/pages/date-time.js"
+            }
+        ]
+    },
+    "blog-detail": {
+        "title": "Blog Detail",
+        "nav": "Blog Detail",
+        "url_style": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css"
+            }
+        ],
+        "url_script": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
+            },
+            {
+                "src": "assets/js/pages/date-time.js"
+            }
+        ]
+    },
+    "blog-detail-sidebar-left": {
+        "title": "Blog Detail",
+        "nav": "Blog Detail",
+        "url_style": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css"
+            }
+        ],
+        "url_script": [
+            {
+                "src": "assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
+            },
+            {
+                "src": "assets/js/pages/date-time.js"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contact",
+        "nav": "Contact",
+        "url_style": [
+        ],
+        "url_script": [
+            {
+                "src":"https://maps.googleapis.com/maps/api/js?key=AIzaSyAu6tm60TzeUo9rWpLnrQ7mrFn4JPMVje4&amp;sensor=false"
+            },
+            {
+                "src": "assets/js/pages/map.js"
+            }
+        ]
+    },
+    "gallery-masonry": {
+        "title": "Gallery Masonry",
+        "nav": "Gallery Masonry",
+        "url_style": [
+        ],
+        "url_script": [
+        ]
+    },
+    "gallery-3col": {
+        "title": "Gallery Three Column",
+        "nav": "Gallery Three Column",
+        "url_style": [
+        ],
+        "url_script": [
+        ]
+    },
+    "gallery-variation": {
+        "title": "Gallery Variation",
+        "nav": "Gallery Variation",
+        "url_style": [
+        ],
+        "url_script": [
+        ]
+    },
+    "coming-soon": {
+        "title": "Coming Soon",
+        "nav": "Coming Soon",
+        "url_style": [
+        ],
+        "url_script": [
+            {
+                "src": "assets/js/pages/coming-soon.js"
+            }
+        ]
+    },
+    "404": {
+        "title": "Error",
+        "nav": "Error",
+        "url_style": [
+        ],
+        "url_script": [
+
+        ]
+    }
+}

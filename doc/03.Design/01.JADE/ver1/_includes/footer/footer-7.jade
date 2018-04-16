@@ -1,0 +1,18 @@
+.wrapper-footer.white.style-3
+    .container
+        .row
+            .col-md-6.col-md-offset-3.col-sm-6.col-sm-offset-3
+                .logo-wrapper 
+                    a(href="#").logo
+                        img(src="assets/images/logos/logo-alt.png" alt="").img-responsive
+                !=partial("../widgets/search")
+        .row
+            .col-md-4.col-sm-6
+                !=partial("../widgets/about-us")
+            .col-md-4.col-sm-6
+                !=partial("../widgets/twitter")
+            .col-md-4.col-sm-6
+                !=partial("../widgets/gallery")
+.footer-bottom.white
+    .container
+        .text &copy; 2016 by <span class="name">&nbsp;swlabs.&nbsp;</span> make with &nbsp; <i class="icons fa fa-heart"></i>

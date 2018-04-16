@@ -1,0 +1,61 @@
+.banner-pages.banner-about
+    .container.container-wrapper
+        .banner-wrapper
+            .title-wrapper
+                h1.title about us
+                .breadcrumb-wrapper
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a.breadcrumb-link(href="#") Home
+                        li.breadcrumb-item
+                            span.breadcrumb-active About 
+            //- .banner-btn
+            //-     a.btn.white-color(href="#") get in touch
+            .clearfix
+section.we-are.no-bg-img.bg-light-blue.padding-top-100.padding-bottom-100
+    .container
+        .row
+            .col-md-6
+                .heading-main
+                    .main-title.last-dif
+                        h5.subtitle about us
+                        h2.title we are 
+                            span.last buildplus
+                .block-content
+                    h4.title We Are A Effective Team
+                    p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                    p.description lquis nostrud exercitation ullam lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam co laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure tempor incididunt ut labore.
+                    a.btn.main-color(href="#") our story
+        img(src="assets/images/team/image-9.png", alt="").img-full
+section.why-choose-us.accordion.padding-top-100.padding-bottom-100
+    .container
+        .row
+            .col-md-6.item
+                .block-video
+                    .btn-play 
+                        img.img-responsive(src="assets/images/more-images/btn-playvideo.png", alt="")
+                    .btn-close
+                        img.img-responsive(src="assets/images/more-images/btn-closevideo.png", alt="")
+                    img.img-full(src="assets/images/post/image-5.jpg", alt="")
+                    iframe.video-embed(src="https://www.youtube.com/embed/1k2NRnc9vQ4?rel=0" allowfullscreen)
+            .col-md-6.item
+                h4.title Our Mission And vision
+                !=partial("_includes/shortcode/accordion") 
+.fact.bg-blue.white
+    .container
+        !=partial("_includes/shortcode/list-count-to") 
+section.team.padding-top-100.padding-bottom-100
+    .container
+        .heading-main
+            .main-title.text-center
+                h5.subtitle experienced staffs
+                h2.title meet great minds
+        !=partial("_includes/list-block-team-4-item")
+section.testimonial-about
+    .container
+        .testimonial-wrapper
+            !=partial("_includes/shortcode/testimonial-1")
+        .logo-wrapper
+            !=partial("_includes/shortcode/list-logo")
+        .banner-bottom.reverse
+            !=partial("_includes/shortcode/banner-1")

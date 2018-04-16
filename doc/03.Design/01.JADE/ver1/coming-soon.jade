@@ -1,0 +1,19 @@
+.page-wrapper.page-coming-soon
+    .container
+        .content-wrapper
+            .header-main
+                .logo-wrapper
+                    a.logo(href="index.html") 
+                        img.img-responsive(src="assets/images/logos/logo-big.png", alt="")
+                .title-wrapper
+                    h1.title welcome to awesome new site.
+                .clearfix
+            .main-content.padding-top-100.padding-bottom-100
+                .content-left
+                    .description We are currently working on an awesome new website.
+                .content-right
+                    !=partial("_includes/shortcode/coming-soon")
+                    .input-wrapper.white
+                        input.form-control(type="email", placeholder="Email Address")
+                    .btn-wrapper
+                        button.btn(type="submit") get notified

@@ -1,0 +1,27 @@
+.header-wrapper.header-absolute.searchbar-full.header-plumbing
+    .header-topbar
+        .container
+            .topbar-list.pull-left
+                .item.topbar-hidden
+                    p.topbar-text 
+                        | We are 
+                        a(href="#").text-color UpStream
+                        | . We are ready to help!
+            .topbar-list.pull-right
+                .item.topbar-hidden
+                    i.topbar-icons.fa.fa-life-ring
+                    p.topbar-text 
+                        | Support: 
+                        span.number-phone 24/7
+                .item
+                    i.topbar-icons.fa.fa-phone
+                    .topbar-text Hotline: <a class="number-phone" href="tel:+123456789">+1 234 567 89</a>
+    .header-main
+        .container
+            != partial("hamburger-menu")
+            .logo-wrapper
+                a.logo(href="index.html") 
+                    img.img-responsive(src="assets/images/logos/logo-plumbing.png", alt="")
+            .main-menu
+                != partial("menu")
+            .clearfix

@@ -1,0 +1,37 @@
+.header-wrapper.header-cleaning
+    .container.wrapper-container
+        .header-topbar
+            .topbar-list.pull-left
+                .item
+                    .logo-wrapper
+                        a.logo(href="index.html") 
+                            img.img-responsive(src="assets/images/logos/logo-cleaning.png", alt="")
+            .topbar-list.pull-right
+                .item.topbar-hidden
+                    .item-wrapper
+                        i.topbar-icons.fa.fa-phone
+                        .topbar-content
+                            a.topbar-text.big(href="tel:+123456789") +1 234 567 89
+                            p.topbar-text Call Us Every 24/7
+                .item.topbar-hidden
+                    .item-wrapper
+                        i.topbar-icons.fa.fa-envelope
+                        .topbar-content
+                            a.topbar-text.big(href="mailto:help@washesup.com") help@washesup.com
+                            p.topbar-text Support & Reply To Your Question
+                .item.topbar-hidden
+                    .item-wrapper
+                        i.topbar-icons.fa.fa-map-marker
+                        .topbar-content
+                            a.topbar-text.big(href="#") 30 Mortensen Avenue
+                            p.topbar-text Salinas, CA 93905
+            .clearfix
+        .header-main
+            != partial("hamburger-menu")
+            .logo-wrapper
+                a.logo(href="index.html") 
+                    img.img-responsive(src="assets/images/logos/logo-cleaning.png", alt="")
+            .main-menu
+                != partial("menu-2")
+            .clearfix
+

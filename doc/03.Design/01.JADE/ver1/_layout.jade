@@ -1,0 +1,123 @@
+doctype
+html(lang="en")
+    head
+        title
+            | BuildPlus
+            = " | "
+            = title
+        meta(charset="utf-8")
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+        
+        // FONT CSS
+        link(type="text/css", rel='stylesheet', href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900")
+        link(type="text/css", rel='stylesheet', href="http://fonts.googleapis.com/css?family=Montserrat:400,700")
+        link(type="text/css", rel="stylesheet", href="assets/font/font-icon/font-awesome/css/font-awesome.css")
+        link(type="text/css", rel="stylesheet", href="assets/font/font-icon/font-construction/flaticon.css")
+
+        // LIBRARY CSS
+        link(type="text/css", rel="stylesheet", href="assets/libs/bootstrap/css/bootstrap.min.css")
+        link(type="text/css", rel="stylesheet", href="assets/libs/animate/animate.css")
+        link(type="text/css", rel='stylesheet', href='assets/libs/slick-slider/slick.css')
+        link(type="text/css", rel='stylesheet', href='assets/libs/slick-slider/slick-theme.css')
+        link(type="text/css", rel='stylesheet', href='assets/libs/fancybox/css/jquery.fancybox.css')
+        link(type="text/css", rel='stylesheet', href='assets/libs/fancybox/css/jquery.fancybox-thumbs.css')
+        
+        // STYLE CSS
+        link(type="text/css", rel='stylesheet', href='assets/css/layout.css')
+        link(type="text/css", rel='stylesheet', href='assets/css/components.css')
+        link(type="text/css", rel='stylesheet', href='assets/css/page.css')
+        link(type="text/css", rel='stylesheet', href='assets/css/responsive.css')
+        link(type="text/css", rel='stylesheet', href='assets/css/color-theme/color-default.css')
+        //- link(type="text/css", rel='stylesheet', href='assets/css/color-theme/color-01.css')
+
+        for page, key in public._data
+            if(current.source == key)
+                for css in page.url_style
+                    if(css.src != undefined)
+                        link(type="text/css", rel="stylesheet", href="#{css.src}")
+
+    body
+        .body-wrapper
+
+            // LOADING PAGE
+            != partial("_includes/loading-page")
+            
+            // WRAPPER CONTENT
+            .wrapper-content(class ="#{ current.source == 'homepage-cleaning' ? 'homepage-cleaning' : '' }#{ current.source == 'homepage-plumbing' ? 'homepage-plumbing' : '' }" )
+                // HEADER
+                header
+                    if( current.source == "index" || current.source == "about")
+                        != partial("_includes/header/header-2")
+                    else if ( current.source == "homepage-2" )
+                        != partial("_includes/header/header-3")
+                    else if (current.source == "homepage-cleaning")
+                        != partial("_includes/header/header-4")
+                    else if (current.source == "homepage-plumbing")
+                        != partial("_includes/header/header-5")
+                    else if ( current.source == "coming-soon" || current.source == "404")
+                        //- no header
+                    else 
+                        != partial("_includes/header/header-1")
+
+                // MENU MOBILE
+                != partial("_includes/header/menu-mobile")
+
+                // MAIN CONTENT
+                .main-content
+                    != yield
+
+                // BUTTON BACK TO TOP
+                #back-top
+                    a.link(href="#top")
+                        i.fa.fa-angle-double-up
+                            
+                // FOOTER
+                footer
+                    if( current.source == "index" )
+                        != partial("_includes/footer/footer-1")
+                    else if( current.source == "homepage-2" )
+                        != partial("_includes/footer/footer-6")
+                    else if( current.source == "homepage-3" )
+                        != partial("_includes/footer/footer-7")
+                    else if( current.source == "homepage-cleaning")
+                        != partial("_includes/footer/footer-4")
+                    else if( current.source == "homepage-plumbing")
+                        != partial("_includes/footer/footer-5")
+                    else if( current.source == "contact" || current.source == "services")
+                        != partial("_includes/footer/footer-2")
+                    else if( current.source == "coming-soon" || current.source == "404")
+                        //- no footer
+                    else
+                        != partial("_includes/footer/footer-3")
+
+        // LIBRARY JS
+        script(src="assets/libs/jquery/jquery-2.2.3.min.js")
+        script(src="assets/libs/moment/js/moment.min.js")
+        script(src="assets/libs/bootstrap/js/bootstrap.min.js")
+        script(src="assets/libs/smooth-scroll/jquery-smoothscroll.js")
+        script(src="assets/libs/wow-js/wow.min.js")
+        script(src="assets/libs/detect-browser/browser.js")
+        script(src="assets/libs/slick-slider/slick.min.js")
+        script(src="assets/libs/isotope/isotope.pkgd.min.js")
+        script(src="assets/libs/count-to/jquery.countTo.js")
+        script(src="assets/libs/appear/jquery.appear.js")
+        script(src="assets/libs/fancybox/js/jquery.fancybox.js")
+        script(src="assets/libs/fancybox/js/jquery.mousewheel-3.0.6.pack.js")
+        script(src="assets/libs/fancybox/js/jquery.fancybox-thumbs.js")
+        
+        //- script(type='text/javascript').
+        //-     if($('#loading-page').length) {
+        //-         $('.wrapper-content').addClass('loaded');
+        //-         setTimeout(function(){
+        //-             $('#loading-page').addClass('loaded');
+        //-         }, 1000);
+        //-     }
+
+        // LOADING JS FOR PAGE
+        for page, key in public._data
+            if(current.source == key)
+                for js in page.url_script
+                    if(js.src != undefined)
+                        script(src='#{js.src}')
+        // MAIN JS
+        script(src="assets/js/main.js")

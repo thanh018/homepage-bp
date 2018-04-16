@@ -1,0 +1,1163 @@
+
+/*
+ *
+ *    [Table of contents]
+ *
+ *    [&. Content / #key]
+ *    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ *    Summary:
+ *
+ *    0. GLOBAL STYLE
+ *        - 0.1. Scaffolding
+ *        - 0.2. Pages' Rules
+ *    1. HEADER
+ *        - 1.1. Topbar Header
+ *        - 1.2. Main Header
+ *        - 1.3. Navigation
+ *    2. CONTENT
+ *        - 2.1. Slide Banner
+ *        - 2.2. Page Title & Breadcrumb
+ *        - 2.3. Main Content
+ *    3. SIDEBAR
+ *        - 3.1. Left Sidebar
+ *        - 3.2. Right Sidebar
+ *        - 3.3. Both Sidebar
+ *    4. FOOTER
+ *        - 4.1. Main Footer
+ *        - 4.2. Sub Footer
+ *        - 4.3. Copyright
+ *
+ */
+/*
+ *
+ *    [Table of contents]
+ *
+ *    [&. Content / #key]
+ *    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ *    Summary:
+ *
+ *    0. VARIABLE LESS
+ *        - 0.1. Color
+ *    1. MIXINS
+*/
+
+/*=====================================
+=            Variable Less            =
+=====================================*/
+
+/*----------  Color  ----------*/
+
+    @main-color: #ffb400;
+    @cleaning-yellow-color: #fbd022;
+    @cleaning-blue-color: #0e95db;
+    @plumbing-color: #1bbde8;
+
+/*=====  End of Variable Less  ======*/
+
+
+/*====================================
+=            Global Style            =
+====================================*/
+
+    .main-color,
+    a:active,
+    a:focus,
+    a:hover {
+        color: @main-color;
+    }
+    #back-top {
+        .link {
+            border-color: @main-color;
+            color: @main-color;
+            &:hover {
+                background-color: @main-color;
+            }
+        }
+    }
+    #loading-page { 
+        background-color: @main-color;
+    }
+    .machine {
+        .machine-roof {
+            background-color: @main-color;
+        }
+        .machine-main {
+            .machine-body {
+                &:after {
+                    background-color: @main-color;
+                }
+            }
+            .machine-back {
+                &:before {
+                    background-color: @main-color;
+                }
+            }
+            .machine-front {
+                border-top-color: @main-color;
+                &:after {
+                    border-color: @main-color;
+                }
+            }
+        }
+    }
+/*=====  End of Global Style  ======*/
+
+/*==============================
+=            Header            =
+==============================*/
+
+    /*----------  1.1. Topbar  ----------*/
+    .header-topbar {
+        border-bottom-color: @main-color;
+    }
+    .topbar-text {
+        .number-phone {
+            color: @main-color;
+        }
+    }
+    /*----------  1.2. Main Header  ----------*/
+    .button-search {
+        .icons {
+            &:hover {
+                color: @main-color;
+            }
+        }
+    }
+    /*----------  1.3. Main Menu  ----------*/
+    .menu-wrapper > li.dropdown:hover > .sub-menu > li:nth-child(1), .mega-menu {
+        border-top-color: @main-color;
+    }
+    /*----------  1.4. Sub Menu  ----------*/
+    .menu-wrapper .sub-menu > li:hover > a {
+        color: @main-color;
+    }
+    .menu-wrapper > li > a:before {
+        background-color: @main-color;
+    }
+    /*----------  1.5. Mega Menu  ----------*/
+    .mega-menu-tablist {
+        li {
+            &.active, &:hover {
+                .link {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+    .mega-menu-wrapper {
+        .mega-menu-column {
+            .link {
+                &:hover {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+    /*----------  1.6. Header more style  ----------*/
+    .header-wrapper.header-cleaning {
+        .header-main {
+            border-bottom-color: @main-color;
+        }
+        .topbar-icons {
+            color: @main-color;
+        }
+        .topbar-text {
+            &.big {
+                &:hover {
+                    color: @cleaning-yellow-color;
+                }
+            }
+        }
+    }
+    .header-wrapper.header-plumbing {
+        .text-color {
+            color: @main-color;
+        }
+    }
+
+/*=====  End of Header  ======*/
+
+
+/*===============================
+=            Sidebar            =
+===============================*/
+
+    /*----------  1.2. Search  ----------*/
+    .search-widget {
+        .input-group {
+            .btn {
+                &:hover {
+                    color: @main-color;
+                }
+            }
+            .line {
+                &:after {
+                    background-color: @main-color;
+                }
+            }
+        }
+    }
+    /*----------  1.3. Categories  ----------*/
+    .categories-inner {
+        .link {
+            &:hover {
+                color: @main-color;
+                box-shadow: -2px 2px 0 0 @main-color;
+            }
+        }
+    }
+    .categories-widget.style-2 {
+        .categories-inner {
+            .link {
+                &:hover {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+    /*----------  1.4. Recent post  ----------*/
+    .meta-info {
+        .link {
+            &:hover,
+            &:focus {
+                color: @main-color;
+            }
+        }
+        &.time .link {
+            color: @main-color;
+        }
+        &.reply {
+            &:hover {
+                i {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+    .recent-post-inner {
+        .media {
+            &:hover {
+                .meta .icons {
+                    color: @main-color;
+                }
+            }
+        }
+        .media-heading {
+            &:hover {
+                color: @main-color;
+            }
+        }
+    }
+    /*----------  1.5. Archive  ----------*/
+    .calendar-board {
+        .datepicker table tr td.day.focused,
+        .datepicker table tr td.day:hover,
+        .datepicker table tr td span:hover,
+        .datepicker table tr td.active,
+        .datepicker table tr td.today,
+        .datepicker table tr td.today.disabled,
+        .datepicker table tr td.today.disabled:hover,
+        .datepicker table tr td.today:hover,
+        .datepicker table tr td.today:hover:hover {
+            background-color: @main-color !important;
+        }
+        thead .next:hover:before, thead .prev:hover:before {
+            color: @main-color;
+        }
+    }
+    .widget_calendar .datepicker table tr td.day:hover {
+        background-color: @main-color;
+    }
+    /*----------  1.6. Tags  ----------*/
+    .tag-inner .tag {
+        &:hover {
+            background-color: @main-color;
+        }
+    }
+    .widget_tag_cloud .tagcloud a:hover {
+        background-color: @main-color;
+    }
+    /*----------  1.8. About us  ----------*/
+    .list-social {
+        .icons {
+            &:hover {
+                color: @main-color;
+            }
+        }
+    }
+    /*----------  1.10. Project details  ----------*/
+     .project-details-widget {
+        .list-details {
+            .main-color {
+                .link { 
+                    &:hover {
+                        color: @main-color;    
+                    }
+                }
+            }
+        }
+    }
+    /*----------  1.12. Twitter  ----------*/
+    .twitter-widget-bottom {
+        .link {
+            &:hover {
+                color: @main-color;
+            }
+        }
+    }
+    /*----------  Color WHITE  ----------*/
+    .white {
+        .recent-post-inner .media-heading:hover {
+            color: @main-color;
+        }
+        .tag {
+            &:hover {
+                background-color: @main-color;
+            }
+        }
+        .list-social .icons {
+            &:hover {
+                color: @main-color;
+            }
+        }
+    }
+
+/*=====  End of Sidebar  ======*/
+
+
+/*=================================
+=            Shortcode            =
+=================================*/
+    /*----------  1. Banner slider  ----------*/
+    .slide-banner-1-item-wrapper {
+        border-bottom-color: @main-color;
+        .title {
+            &:before {
+                background-color: @main-color;
+            }
+        }
+    }
+    /*----------  2. Button  ----------*/
+    .btn {
+        &.main-color {
+            background-color: @main-color;
+            border-color: @main-color;
+            &:hover {
+                color: @main-color;
+            }
+        }
+        &.white-color {
+            color: @main-color;
+        }
+        &.transparent {
+            &.main-color {
+                color: @main-color;
+                &:hover {
+                    border-color: @main-color;
+                    background-color: @main-color;
+                }
+            }
+            &.white-color {
+                &:hover {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+    .btn-download-wrapper {
+        .btn-download {
+            color: @main-color;
+        }
+        .btn-link {
+            .link {
+                color: @main-color;
+            }
+        }
+    }
+    .btn-loadmore {
+        color: @main-color;
+        border-bottom-color: @main-color;
+        &:before {
+            background-color: @main-color;
+        }
+    }
+    /*----------  3. Title  ----------*/
+    .main-title {
+        .title {
+            &:before {
+                background-color: @main-color;
+
+            }
+        }
+    }
+    .last-dif {
+        .last {
+            color: @main-color;
+        }
+    }
+    /*----------  4. Pagination  ----------*/
+    .pagination-wrapper {
+        .pagination {
+             li {
+                .link { 
+                    &:hover, &:focus, &.active { 
+                        background-color: @main-color;
+                    }
+                }
+            }
+        }
+    }
+    /*----------  5. Tabs  ----------*/
+    .tablist {
+        li {
+            .link {
+                &:before {
+                    background-color: @main-color;
+
+                }
+                &:hover {
+                    color: @main-color;
+                }
+            }
+            &.active {
+                .link {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+    /*----------  6. Block icon  ----------*/
+    .block-icon-1 {
+         .wrapper-icons {
+            color: @main-color;
+            &:after {
+                background-color: @main-color;
+            }
+         }
+    }
+    .block-icon-2 {
+        .wrapper-icons {
+            color: @main-color;
+            border-color: @main-color;
+        }
+        .icons {
+            &:after {
+                background-color: @main-color;
+            }
+        }
+    }
+    .block-icon-3 {
+        &:after {
+            background-color: @main-color;
+        }
+        .wrapper-icons {
+            color: @main-color;
+            &:before {
+                background-color: @main-color;
+            }
+        }
+    }
+    /*----------  7. Contact info  ----------*/
+    .contact-info-box {
+        .wrapper-info {
+            .text {
+                .text-bold {
+                    color: @main-color;
+                }
+            }
+            .link {
+                &:hover {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+    /*----------  8. Blogs, News, Service, Post  ----------*/
+    .label-block {
+        background-color: @main-color;
+    }
+    .sticky-block {
+        color: @main-color;
+    }
+    .block-info {
+        .block {
+            .link {
+                &.date {
+                    color: @main-color;
+                }
+            }
+            a:hover {
+                color: @main-color;
+            }
+        }
+    }
+    .block-1 {
+        .block-content {
+            .title {
+                &:hover {
+                    color: @main-color;
+                }
+            }
+            .readmore {
+                &:hover {
+                    color: @main-color;
+                }
+            }
+            .readmore-icons {
+                background-color: @main-color;
+            }
+            &:before {
+                background-color: @main-color;
+            }
+        }
+        .block-quote {
+            .title {
+                color: @main-color;
+            }
+        }
+    }
+    .block-2 {
+        .block-content {
+            .progress-bar-wrapper {
+                .progress {
+                    .progress-bar {
+                        background-color: @main-color;
+                    }
+                }
+            }
+            .title {
+                &:before {
+                    background-color: @main-color;
+                }
+                &:hover {
+                    color: @main-color;
+                }
+            }
+            .readmore {
+                &:hover {
+                    color: @main-color;
+                }
+            }
+            .readmore-icons {
+                background-color: @main-color;
+            }
+            &:before {
+                background-color: @main-color;
+            }
+        }
+    }
+    .block-service {
+        background-color: @main-color;
+    }
+    /*----------  11. Images category  ----------*/
+    .block-image-gallery {
+        &:after {
+            background-color: @main-color;
+        }
+        .content {
+            .title {
+                &:before {
+                    background-color: @main-color;
+                }
+            }
+        }
+        .readmore-icons {
+            background-color: @main-color;
+        }
+    }
+    /*----------  12. Team  ----------*/
+    .block-team {
+        .block-content {
+            border-left-color: @main-color;
+            .title {
+                &:hover {
+                    color: @main-color;
+                }
+            }
+            .position {
+                color: @main-color;
+            }
+        }
+    }
+    /*----------  13. Testimonial  ----------*/
+    .testimonial-1 {
+        .testimonial-image {
+            &:before {
+                color: @main-color;
+            }
+        }
+        .testimonial-content {
+            .name {
+                &:hover {
+                    color: @main-color;
+                }
+            }
+            .position {
+                color: @main-color;
+            }
+        }
+    }
+    .testimonial-2 {
+        .infomation {
+            .name {
+                .position {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+    .testimonial-3 {
+        .image-wrapper {
+            &:before {
+                color: @main-color;
+            }
+        }
+        .name {
+            &:hover {
+                color: @main-color;
+            }
+        }
+        .position {   
+            color: @main-color;
+        }
+    }
+    .white {
+        .testimonial-1 {
+            .testimonial-content {
+                .name {
+                    &:hover {
+                        color: @main-color;
+                    }
+                }
+            }
+        }
+    }
+    /*----------  15. Count Number  ----------*/
+    .count-number {
+        .number {
+            &:before {
+                background-color: @main-color;
+            }
+        }
+        .name {
+            color: @main-color;
+        }
+    }
+    /*----------  16. Acodion  ----------*/
+    .block-accordion {
+        .panel-group {
+            .panel {
+                .panel-body {
+                    border-bottom-color: @main-color;
+                    border-left-color: @main-color;
+                }
+            }
+        }
+        .icons {
+            background-color: @main-color;
+        }
+    }
+    /*----------  17. Banner  ----------*/
+    .banner-1 {
+        background-color: @main-color;
+    }
+    .banner-3 {
+        .big-title {
+            color: @main-color;
+        }
+    }
+    .banner-4 {
+        .subtitle {
+            color: @main-color;
+        }
+    }
+
+    .banner-5 {
+        .title {
+            color: @main-color;
+        }
+    }
+    .banner-pages {
+        .banner-wrapper {
+            border-bottom-color: @main-color;
+        }
+        .title {
+            &:before {
+                background-color: @main-color;
+            }
+        }
+    }
+    /*----------  18. Slider syncing  ----------*/
+    .slider-vertical-wrapper {
+        .slider-for-wrapper {
+            .item-wrapper {
+                .content-wrapper {
+                    .readmore {
+                        &:hover {
+                            color: @main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*----------  20. Contact Form  ----------*/
+    .contact-form {   
+        background-color: @main-color;
+    }
+    /*----------  21. Map  ----------*/
+    .contact-map {
+        &:before {
+            background-color: @main-color;
+        }
+    }
+    /*----------  22. Coming Soon  ----------*/
+    .coming-soon {
+        background-color: @main-color;
+    }
+    /*----------  23. BLock detail wrapper  ----------*/
+    .blog-detail-content {
+        blockquote {
+            > p {
+                cite {
+                    a {
+                        &:hover {
+                            color: @main-color;
+                        }
+                    }
+                    span {
+                        color: @main-color;
+                    }
+                }
+            }
+        }
+    }
+    .next-prev-page {
+        border-bottom-color: @main-color;
+    }
+    /*----------  24. Pricing Plan - Package  ----------*/
+    .package-content {
+        .title {
+            color: @main-color;
+        }
+        &:hover {
+            border-bottom-color: @main-color;
+            .btn {
+                background-color: @main-color;
+                border-color: @main-color;
+            }
+        }
+    }
+    
+/*=====  End of Shortcode  ======*/
+
+
+/*============================
+=            Page            =
+============================*/
+    /*----------  Homepage Default  ----------*/
+    .image-gallery {
+        &:before {
+            background-color: @main-color;
+        }
+    }
+    .banner-2-default {
+        .btn.white-color {
+            &:hover {
+                border-color: @main-color;
+                color: @main-color;
+            }
+        }
+    }
+    /*----------  Homepage 2  ----------*/
+    .homepage-1-banner {
+        .banner-title {
+            .subtitle {
+                color: @main-color;
+            }
+        }
+    }
+    /*----------  Homepage 3  ----------*/
+    .homepage-2-banner {
+        .subtitle {
+            color: @main-color;
+        }
+        .rectangle {
+            border-color: @main-color;
+        }
+    }
+    /*----------  Page About  ----------*/
+    .accordion {
+        .title {
+            &:before {
+                background-color: @main-color;
+            }
+        }
+    }
+    /*----------  Page Team Member  ----------*/
+    .detail-contact-info {
+        .position {
+            color: @main-color;
+        }
+        .contact-list {
+            .text {
+                &:hover {
+                    color: @main-color;
+                }
+                &.text-bold {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+    /*----------  Page Comming Soon  ----------*/
+    .page-coming-soon {
+        .main-content {
+            background-color: @main-color;
+        }
+    }
+    
+    
+    /*----------  Homepage Cleaning  ----------*/
+    .homepage-cleaning-banner {
+        .slide-banner-1-item-wrapper {
+            .subtitle {
+                color: @main-color;
+            }
+        }
+    }
+    .testimonial-homepage-cleaning {
+        .testimonial-1 {
+            .testimonial-content {
+                .position {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+    .homepage-cleaning {
+        //.change-color-cleaning(@cleaning-yellow-color, @cleaning-blue-color);
+        .header-wrapper.header-cleaning .header-main {
+            border-bottom-color: @cleaning-blue-color;
+        }
+        .package-content:hover {
+            border-bottom-color: @cleaning-yellow-color;
+        }
+        .menu-wrapper > li.dropdown:hover > .sub-menu > li:nth-child(1),
+        .mega-menu {
+            border-top-color: @cleaning-blue-color;
+        }
+        .btn.main-color,
+        .package-content:hover .btn {
+            border-color: @cleaning-yellow-color;
+        }
+        .block-2 .block-content .title:hover,
+        .header-wrapper.header-cleaning .topbar-icons,
+        .block-2 .block-content .readmore:hover,
+        .block-1 .block-content .title:hover,
+        .block-1 .block-content .readmore:hover,
+        .homepage-cleaning-banner .slide-banner-1-item-wrapper .subtitle,
+        .btn.transparent.white-color:hover,
+        .btn.main-color:hover,
+        .recent-post-inner .media-heading:hover,
+        .banner-4 .subtitle,
+        .testimonial-1 .testimonial-image:before,
+        .testimonial-homepage-cleaning .testimonial-1 .testimonial-content .position,
+        .contact-info-box .wrapper-info .text .text-bold,
+        .white .recent-post-inner .media-heading:hover,
+        .meta-info .link:hover, .meta-info .link:focus {
+            color: @cleaning-yellow-color;
+        }
+        .menu-wrapper .sub-menu > li:hover > a,
+        .mega-menu-tablist li.active .link,
+        .mega-menu-tablist li:hover .link,
+        .mega-menu-wrapper .mega-menu-column .link:hover,
+        .detail-content > ul li:before,
+        .package-content .title,
+        .block-info .block .link.date,
+        .meta-info.time .link {
+            color: @cleaning-blue-color;
+        }
+        
+        .label-block,
+        .block-2 .block-content .progress-bar-wrapper .progress .progress-bar,
+        .block-2 .block-content .title:before,
+        .block-2 .block-content:before,
+        .block-1 .block-content:before,
+        .block-image-gallery .content .title:before,
+        .block-image-gallery:after,
+        .block-image-gallery .readmore-icons,
+        .btn.main-color,
+        .package-content:hover .btn,
+        .banner-1 {
+            background-color: @cleaning-yellow-color;
+        }
+        .main-title .title:before,
+        .tablist li .link:before {
+            background-color: @cleaning-blue-color;
+        }
+        .btn.main-color:hover {
+            background-color: #fff;
+        }
+
+    }
+    /*----------  Homepage Plumbing  ----------*/
+    .homepage-plumbing-banner {
+        .slide-banner-1-item-wrapper {
+            .subtitle {
+                color: @main-color;
+            }
+        }
+    }
+    .plumbing-fact {
+        background-color: @main-color;
+    }
+    .plumbing-banner-2 {
+        background-color: @main-color;
+    }
+    .homepage-plumbing {
+        //.change-color-plumbing(@plumbing-color);
+        .header-wrapper.header-plumbing .text-color,
+        .topbar-text .number-phone,
+        .menu-wrapper .sub-menu > li:hover > a,
+        .mega-menu-tablist li.active .link, 
+        .mega-menu-tablist li:hover .link,
+        .block-2 .block-content .title:hover,
+        .block-2 .block-content .readmore:hover,
+        .block-1 .block-content .title:hover,
+        .block-1 .block-content .readmore:hover,
+        .mega-menu-wrapper .mega-menu-column .link:hover,
+        .button-search .icons:hover,
+        .homepage-plumbing-banner .slide-banner-1-item-wrapper .subtitle,
+        .btn.transparent.white-color:hover,
+        .btn.main-color:hover,
+        .last-dif .last,
+        .banner-5 .title,
+        .tablist li.active .link,
+        .testimonial-3 .image-wrapper:before,
+        .testimonial-3 .position,
+        .block-info .block .link.date,
+        .tablist li .link:hover,
+        .testimonial-3 .name:hover {
+            color: @plumbing-color;
+        }
+        .menu-wrapper > li > a:before,
+        .label-block,
+        .block-2 .block-content .progress-bar-wrapper .progress .progress-bar,
+        .block-2 .block-content .title:before,
+        .block-2 .block-content:before,
+        .block-1 .block-content:before,
+        .block-image-gallery:after,
+        .block-image-gallery .readmore-icons,
+        .block-image-gallery .content .title:before,
+        .btn.main-color,
+        .block-service,
+        .main-title .title:before,
+        .tablist li .link:before,
+        .plumbing-fact,
+        .plumbing-banner-2 {
+            background-color: @plumbing-color;
+        }
+        .menu-wrapper > li.dropdown:hover > .sub-menu > li:nth-child(1),
+        .mega-menu {
+            border-top-color: @plumbing-color;
+        }
+        .btn.main-color {
+            border-color: @plumbing-color;
+        }
+        .btn.main-color:hover {
+            background-color: #fff;
+        }
+
+    }
+    
+
+/*=====  End of Page  ======*/
+
+
+/*===================================
+=            WooCommerce            =
+===================================*/
+  .woocommerce .woocommerce-message .wc-forward,
+  .woocommerce .comment-respond .form-submit .submit,
+  .slz-woocommerce .comment-respond .form-submit .submit,
+  .woocommerce ul.products li.product .onsale,
+  .woocommerce span.onsale,
+  .woocommerce .type-product .onsale,
+  .woocommerce ul.products li.type-product .onsale,
+  .woocommerce div.product .woocommerce-tabs ul.tabs > li a:before,
+  .slz-woocommerce div.product .woocommerce-tabs ul.tabs > li a:before,
+  .status-publish.hentry .woocommerce .title h3:after,
+  .status-publish.hentry .woocommerce h2:after,
+  .woocommerce .woocommerce-shipping-fields .checkbox:after,
+  .woocommerce .woocommerce-checkout > h3:after,
+  .woocommerce .woocommerce-billing-fields h3:after,
+  .woocommerce .type-product .related h2:after,
+  .woocommerce .type-product .upsells h2:after,
+  .woocommerce nav.woocommerce-pagination > .page-numbers > li .page-numbers.current,
+  .woocommerce .woocommerce-pagination > .page-numbers > li .page-numbers:hover,
+  .slz-woocommerce .woocommerce-pagination > .page-numbers > li .page-numbers:hover,
+  .woocommerce.widget_price_filter .price_slider .ui-widget-header,
+  .woocommerce table.shop_table thead tr th,
+  .woocommerce #respond input#submit.alt,
+  .woocommerce a.button.alt,
+  .woocommerce button.button.alt,
+  .woocommerce input.button.alt,
+  .woocommerce #respond input#submit.alt:after,
+  .woocommerce a.button.alt:after,
+  .woocommerce button.button.alt:after,
+  .woocommerce input.button.alt:after,
+  .footer .woocommerce #respond input#submit:hover:after,
+  .footer .woocommerce a.button:hover:after,
+  .footer .woocommerce button.button:hover:after,
+  .footer .woocommerce input.button:hover:after,
+  .woocommerce-account .woocommerce-MyAccount-content h3:after,
+  .woocommerce .billing-address-header-wrapper h3:after {
+      background-color: @main-color;
+  }
+  .woocommerce .added_to_cart.wc-forward,
+  .woocommerce input#submit,
+  .woocommerce a.button,
+  .woocommerce button.button,
+  .woocommerce input.button,
+  .woocommerce #respond input#submit,
+  .slz-woocommerce a.button,
+  .slz-woocommerce button.button,
+  .slz-woocommerce input.button,
+  .slz-woocommerce a.button:hover,
+  .woocommerce a.added_to_cart:hover,
+  .woocommerce button.button:focus,
+  .slz-woocommerce a.button:focus,
+  .slz-woocommerce button.button:focus,
+  .woocommerce a.added_to_cart:focus,
+  .woocommerce a.button:active,
+  .woocommerce button.button:active,
+  .slz-woocommerce a.button:active,
+  .slz-woocommerce button.button:active,
+  .woocommerce a.added_to_cart:active,
+  .slz-woocommerce input.button:hover,
+  .woocommerce.widget_product_search .woocommerce-product-search input[type='submit']:hover,
+  .woocommerce table.shop_table td.actions .button[name="apply_coupon"]:hover,
+  .woocommerce #respond input#submit.alt:hover {
+      background-color: @main-color;
+      border-color: @main-color;
+  }
+  .woocommerce .widget_shopping_cart .cart_list li a.remove,
+  .slz-woocommerce .widget_shopping_cart .cart_list li a.remove,
+  .woocommerce a.remove {
+      color: @main-color !important;
+  }
+  .woocommerce .woocommerce-message a,
+  .slz-woocommerce .woocommerce-message a,
+  .woocommerce .woocommerce-error a,
+  .slz-woocommerce .woocommerce-error a,
+  .woocommerce .woocommerce-info a,
+  .slz-woocommerce .woocommerce-info a,
+  .woocommerce .woocommerce-message .button,
+  .slz-woocommerce .woocommerce-message .button,
+  .woocommerce .woocommerce-error .button,
+  .slz-woocommerce .woocommerce-error .button,
+  .woocommerce .woocommerce-info .button,
+  .slz-woocommerce .woocommerce-info .button,
+  .woocommerce .woocommerce-info:before,
+  .woocommerce .woocommerce-message:before,
+  .woocommerce .woocommerce-message .wc-forward:hover,
+  .woocommerce .woocommerce-message .wc-forward:hover:before,
+  .woocommerce .woocommerce-message .wc-forward.active:before,
+  p.stars a.star-1:after,
+  p.stars a.star-2:after,
+  p.stars a.star-3:after,
+  p.stars a.star-4:after,
+  p.stars a.star-5:after,
+  .woocommerce div.product p.price ins, .woocommerce div.product span.price ins,
+  .woocommerce .type-product .entry-summary .price ins,
+  .woocommerce .type-product .entry-summary .price > .amount,
+  .woocommerce div.product .woocommerce-tabs ul.tabs > li.active > a,
+  .woocommerce div.product .woocommerce-tabs ul.tabs > li > a:hover,
+  .woocommerce div.product .woocommerce-tabs ul.tabs > li > a:active,
+  .woocommerce div.product .woocommerce-tabs ul.tabs > li > a:focus,
+  .slz-woocommerce div.product .woocommerce-tabs ul.tabs > li.active > a,
+  .slz-woocommerce div.product .woocommerce-tabs ul.tabs > li > a:hover,
+  .slz-woocommerce div.product .woocommerce-tabs ul.tabs > li > a:active,
+  .slz-woocommerce div.product .woocommerce-tabs ul.tabs > li > a:focus,
+  .woocommerce ul.products li.product h3:hover,
+  .woocommerce .products .type-product h3:hover,
+  .woocommerce ul.products li.product .price ins,
+  .woocommerce .products .type-product .price ins,
+  .woocommerce ul.products li.product .price,
+  .woocommerce ul.products li.product .price ins .amount,
+  .woocommerce .products .type-product .price ins .amount,
+  .woocommerce .products .type-product .price > .amount,
+  span.product-title:hover,
+  span.product-title:active,
+  span.product-title:focus,
+  .woocommerce ul.product_list_widget li .quantity .amount,
+  .woocommerce .widget_shopping_cart .total .amount,
+  .woocommerce.widget_shopping_cart .total .amount,
+  .woocommerce.widget_top_rated_products .product_list_widget .amount,
+  .woocommerce.widget_recently_viewed_products .product_list_widget .amount,
+  .woocommerce.widget_products .product_list_widget .amount,
+  .woocommerce a:hover,
+  .woocommerce a:active,
+  .woocommerce a:focus,
+  .woocommerce.widget_product_categories .product-categories > li span.fa:hover,
+  .woocommerce.widget_recently_viewed_products .product_list_widget ins,
+  .woocommerce.widget_products .product_list_widget ins,
+  .woocommerce.widget_top_rated_products .product_list_widget ins,
+  .woocommerce .star-rating:before,
+  .star-rating span,
+  .woocommerce table.shop_table td.product-name a:hover,
+  .woocommerce table.shop_table td.actions .button:hover,
+  .woocommerce table.wishlist_table tbody .product-price ins,
+  .woocommerce table.wishlist_table tbody .product-price ins .amount,
+  .woocommerce .login .form-row:not(.form-row-first):not(.form-row-last):not(.form-row-wide) input[type=checkbox]:checked + label:before,
+  .woocommerce .create-account input[type=checkbox]:checked + .checkbox:before,
+  .woocommerce .woocommerce-shipping-fields input[type=checkbox]:checked + .checkbox:before,
+  .woocommerce ul#shipping_method li input[type=radio]:checked + label:before,
+  .woocommerce #payment ul.payment_methods li input[type=radio]:checked + label:before,
+  .woocommerce #payment .payment_method_paypal .about_paypal,
+  .woocommerce .woocommerce-thankyou-order-received,
+  .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse a,
+  .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a,
+  .footer .woocommerce a:hover,
+  .footer .woocommerce ul.cart_list li a:hover,
+  .footer .woocommerce ul.product_list_widget li a:hover,
+  .woocommerce .products .type-product .product_type_variable.add_to_cart_button:hover,
+  .woocommerce ul.products li.product .button:hover,
+  .woocommerce.widget_product_search .woocommerce-product-search input[type='submit'] {
+      color: @main-color;
+  }
+  .woocommerce .woocommerce-error,
+  .woocommerce .woocommerce-message,
+  .slz-woocommerce .woocommerce-message,
+  .slz-woocommerce .woocommerce-error,
+  .woocommerce .woocommerce-info,
+  .slz-woocommerce .woocommerce-info,
+  .rtl .sidebar .widget .title-widget,
+  .woocommerce.widget_price_filter .price_slider .ui-slider-handle,
+  .woocommerce .products .type-product .product_type_variable.add_to_cart_button:hover,
+  .woocommerce ul.products li.product .button:hover {
+      border-color: @main-color;
+  }
+  .woocommerce ul.products li.product .button:hover,
+  .woocommerce button.button:hover,
+  .slz-woocommerce button.button:hover,
+  .woocommerce button.button.alt:hover,
+  .woocommerce #respond input#submit:hover,
+  .woocommerce input#submit:hover,
+  .woocommerce a.button:hover,
+  .woocommerce a.button.alt:hover,
+  .woocommerce a.button:focus,
+  .woocommerce input.button:hover,
+  .woocommerce input.button.alt:hover {
+    background-color: #fff;
+    color: @main-color;
+    border-color: @main-color;
+  }
+  .woocommerce .woocommerce-message .wc-forward,
+  .woocommerce.widget_product_search .woocommerce-product-search input[type='submit']:hover {
+      color: #fff;
+  }
+/*=====  End of WooCommerce  ======*/

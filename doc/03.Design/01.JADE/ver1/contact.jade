@@ -1,0 +1,22 @@
+.banner-pages
+    .container.container-wrapper
+        .banner-wrapper
+            .title-wrapper
+                h1.title contact us
+                .breadcrumb-wrapper
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a.breadcrumb-link(href="#") Home
+                        li.breadcrumb-item
+                            span.breadcrumb-active Contact
+            .banner-btn
+                a.btn.white-color(href="#") get in touch
+            .clearfix
+.main-contact
+    !=partial("_includes/shortcode/list-contact-info")
+.contact-map
+    #map
+    .container
+        .row
+            .col-md-6.pull-right.contact-form-wrapper
+                !=partial("_includes/shortcode/contact-form")

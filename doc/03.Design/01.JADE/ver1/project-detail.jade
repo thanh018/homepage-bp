@@ -1,0 +1,41 @@
+.banner-pages.banner-project-detail
+    .container.container-wrapper
+        .banner-wrapper
+            .title-wrapper
+                h1.title projects 
+                .breadcrumb-wrapper
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a.breadcrumb-link(href="#") Home
+                        li.breadcrumb-item
+                            span.breadcrumb-active Projects
+            .banner-btn
+                a.btn.white-color(href="#") get in touch
+            .clearfix
+section.project-detail.padding-top-100.padding-bottom-100
+    .container
+        .heading-main
+            .main-title
+                h5.subtitle construction
+                h2.title steam generator design & fabrication
+        .row
+            .col-md-8.col-xs-12.main-detail.main-left
+                .project-content
+                    !=partial("_includes/shortcode/slider-syncing", { image_1: "assets/images/post/image-20.jpg", image_2: "assets/images/post/image-12.jpg", image_3: "assets/images/post/image-13.jpg", image_4: "assets/images/post/image-14.jpg", image_5: "assets/images/post/image-15.jpg", image_6: "assets/images/post/image-16.jpg", image_7: "assets/images/post/image-17.jpg", image_8: "assets/images/post/image-18.jpg" })
+                    .detail-content
+                        h4.title project overview
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip .
+                        p Dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem ac cusantium doloremque laudantium, totam rem ap eriam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                        p Nemo enim ipsam vo luptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
+            .col-md-4.col-xs-12.sidebar
+                !=partial("_includes/widgets/project-details")
+                !=partial("_includes/widgets/contact-us-now")
+section.related-projects.padding-top-100.padding-bottom-100
+    .container
+        .heading-main
+            .main-title
+                h5.subtitle our projects
+                h2.title related projects
+        !=partial("_includes/related-projects")
+        .banner-bottom
+            !=partial("_includes/shortcode/banner-1")

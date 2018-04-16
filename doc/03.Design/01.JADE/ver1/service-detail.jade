@@ -1,0 +1,40 @@
+.banner-pages.banner-service-detail
+    .container.container-wrapper
+        .banner-wrapper
+            .title-wrapper
+                h1.title construction 
+                .breadcrumb-wrapper
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a.breadcrumb-link(href="#") Home
+                        li.breadcrumb-item
+                            a.breadcrumb-link(href="#") Services
+                        li.breadcrumb-item
+                            span.breadcrumb-active Construction
+            //- .banner-btn
+            //-     a.btn.white-color(href="#") get in touch
+            .clearfix
+section.service-detail.padding-top-100.padding-bottom-100
+    .container
+        .row
+            .col-md-9.col-xs-12.main-detail.main-right
+                .service-content
+                    //- img.img-responsive(src="assets/images/post/image-6.jpg").post-img
+                    !=partial("_includes/shortcode/slider-syncing", { image_1: "assets/images/post/image-20.jpg", image_2: "assets/images/post/image-12.jpg", image_3: "assets/images/post/image-13.jpg", image_4: "assets/images/post/image-14.jpg", image_5: "assets/images/post/image-15.jpg", image_6: "assets/images/post/image-16.jpg", image_7: "assets/images/post/image-17.jpg", image_8: "assets/images/post/image-18.jpg" })
+                    .detail-content
+                        h4.title construction management
+                        p Under a Construction Management contract, the client secures the services of a construction manager to work with the design team and, depending on the client’s needs, with trade contractors and suppliers.
+                        p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                        h4.title benefits to you
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequu ntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                        p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    .slider-wrapper
+                        h4.main-title project by us
+                        !=partial("_includes/project-slide")
+            .col-md-3.col-xs-12.sidebar
+                    !=partial("_includes/widgets/categories")
+                    !=partial("_includes/widgets/download")
+                    !=partial("_includes/widgets/contact-us-now")
+        .banner-bottom
+            !=partial("_includes/shortcode/banner-1")

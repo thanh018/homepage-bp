@@ -1,0 +1,180 @@
+section.slide-banner-1
+    .slide-banner-1-item
+        img.img-bg(src="assets/images/background/slider-banner-1.jpg", alt="")
+        .container.wrapper-item-content
+            .content
+                .slide-banner-1-item-wrapper
+                    h5.subtitle welcome to buildplus
+                    h1.title we build your best life
+                    p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    a.btn.main-color(href="#") view more
+    .slide-banner-1-item
+        img.img-bg(src="assets/images/background/slider-banner-2.jpg", alt="")
+        .container.wrapper-item-content
+            .content
+                .slide-banner-1-item-wrapper
+                    h5.subtitle We Are Buildplus
+                    h1.title WELCOME TO BUILDPLUS
+                    p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    a.btn.main-color(href="#") view more
+    .slide-banner-1-item
+        img.img-bg(src="assets/images/background/slider-banner-3.jpg", alt="")
+        .container.wrapper-item-content
+            .content
+                .slide-banner-1-item-wrapper
+                    h5.subtitle WHY CHOOSE US
+                    h1.title WE BUILD YOUR DREAM
+                    p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    a.btn.main-color(href="#") view more
+section.default-service
+    .container
+        !=partial("_includes/shortcode/banner-1")
+        .slide-block.no-dots.column-3.padding-top-100.padding-bottom-100
+            .item
+                .block-1
+                    .block-image
+                        img.img-full(src="assets/images/post/image-6.jpg", alt="")
+                        a.link(href="#")
+                    .block-content
+                        a.title(href="#") Construction
+                        .description
+                            p.text Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusmod tempor incididunt ut.
+                        a.readmore(href="#")
+                            span.text read more
+                            i.icons.fa.fa-angle-double-right
+            .item
+                .block-1
+                    .block-image
+                        img.img-full(src="assets/images/post/image-1.jpg", alt="")
+                        a.link(href="#")
+                    .block-content
+                        a.title(href="#") Consultant
+                        .description
+                            p.text Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusmod tempor incididunt ut.
+                        a.readmore(href="#")
+                            span.text read more
+                            i.icons.fa.fa-angle-double-right
+            .item
+                .block-1
+                    .block-image
+                        img.img-full(src="assets/images/post/image-4.jpg", alt="")
+                        a.link(href="#")
+                    .block-content
+                        a.title(href="#") Architecture
+                        .description
+                            p.text Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusmod tempor incididunt ut.
+                        a.readmore(href="#")
+                            span.text read more
+                            i.icons.fa.fa-angle-double-right
+            .item
+                .block-1
+                    .block-image
+                        img.img-full(src="assets/images/post/image-6.jpg", alt="")
+                        a.link(href="#")
+                    .block-content
+                        a.title(href="#") Construction
+                        .description
+                            p.text Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusmod tempor incididunt ut.
+                        a.readmore(href="#")
+                            span.text read more
+                            i.icons.fa.fa-angle-double-right
+            .item
+                .block-1
+                    .block-image
+                        img.img-full(src="assets/images/post/image-1.jpg", alt="")
+                        a.link(href="#")
+                    .block-content
+                        a.title(href="#") Consultant
+                        .description
+                            p.text Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusmod tempor incididunt ut.
+                        a.readmore(href="#")
+                            span.text read more
+                            i.icons.fa.fa-angle-double-right
+            .item
+                .block-1
+                    .block-image
+                        img.img-full(src="assets/images/post/image-4.jpg", alt="")
+                        a.link(href="#")
+                    .block-content
+                        a.title(href="#") Architecture
+                        .description
+                            p.text Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusmod tempor incididunt ut.
+                        a.readmore(href="#")
+                            span.text read more
+                            i.icons.fa.fa-angle-double-right
+section.image-gallery.padding-top-100.padding-bottom-100.bg-blue.white
+    .container
+        .heading-main
+            .header-left
+                .main-title
+                    h5.subtitle our projects
+                    h2.title featured work
+            .header-right
+                ul.tablist(role="tablist")
+                    li.active(role="presentation")
+                        a.link(href="#tab-1", role="tab", data-toggle="tab") construction
+                    li(role="presentation")
+                        a.link(href="#tab-2", role="tab", data-toggle="tab") interior
+                    li(role="presentation")
+                        a.link(href="#tab-3", role="tab", data-toggle="tab") architect
+                    li(role="presentation")
+                        a.link(href="#tab-4", role="tab", data-toggle="tab") building
+                    li(role="presentation")
+                        a.link(href="#tab-5", role="tab", data-toggle="tab") plumbing
+            .clearfix
+    .tab-content
+        #tab-1.tab-pane.fade.in.active(role="tabpanel")
+            !=partial("_includes/shortcode/list-gallery-4-item", { link_1:"Architect", title_1: "FLOURY", image_1:"assets/images/post/image-27.jpg", link_2:"Architect", title_2: "TRANSERA", image_2:"assets/images/post/image-26.jpg", link_3:"Architect", title_3: "BUILDPLUS", image_3:"assets/images/post/image-25.jpg", link_4:"Architect", title_4: "SOLALA", image_4:"assets/images/post/image-28.jpg"} )
+        #tab-2.tab-pane.fade(role="tabpanel")
+            !=partial("_includes/shortcode/list-gallery-4-item", { link_1:"Fugit", title_1: "FLEXI", image_1:"assets/images/post/image-21.jpg", link_2:"Mel", title_2: "APPEXPO", image_2:"assets/images/post/image-24.jpg", link_3:"Ad", title_3: "GRASSY", image_3:"assets/images/post/image-27.jpg", link_4:"Munere", title_4: "MAGICLEAN", image_4:"assets/images/post/image-23.jpg"} )
+        #tab-3.tab-pane.fade(role="tabpanel")
+            !=partial("_includes/shortcode/list-gallery-4-item", { link_1:"Eos", title_1: "SOLABIZ", image_1:"assets/images/post/image-28.jpg", link_2:"Admodum", title_2: "ALAB", image_2:"assets/images/post/image-22.jpg", link_3:"Augue", title_3: "FLOURY", image_3:"assets/images/post/image-29.jpg", link_4:"Eu", title_4: "TRANSERA", image_4:"assets/images/post/image-30.jpg"} )
+        #tab-4.tab-pane.fade(role="tabpanel")
+            !=partial("_includes/shortcode/list-gallery-4-item", { link_1:"Vis", title_1: "BUILDPLUS", image_1:"assets/images/post/image-22.jpg", link_2:"Munere", title_2: "SOLALA", image_2:"assets/images/post/image-26.jpg", link_3:"Quo", title_3: "FLEXI", image_3:"assets/images/post/image-21.jpg", link_4:"Ex", title_4: "APPEXPO", image_4:"assets/images/post/image-24.jpg"} )
+        #tab-5.tab-pane.fade(role="tabpanel")
+            !=partial("_includes/shortcode/list-gallery-4-item", { link_1:"Choro", title_1: "GRASSY", image_1:"assets/images/post/image-30.jpg", link_2:"Facilis", title_2: "MAGICLEAN", image_2:"assets/images/post/image-23.jpg", link_3:"Te", title_3: "SOLABIZ", image_3:"assets/images/post/image-28.jpg", link_4:"ALAB", title_4: "Phaedrum evertitur pri an", image_4:"assets/images/post/image-24.jpg"} )
+section.how-we-work.padding-top-100.padding-bottom-100
+    .container
+        .heading-main
+            .main-title
+                h5.subtitle about us
+                h2.title how we work
+        .row
+            .col-md-8.list-block-wrapper
+                !=partial("_includes/shortcode/list-block-icon-1")
+            img.img-responsive(src="assets/images/team/image-5.png", alt="").side-img
+section.why-choose-us.padding-top-100.padding-bottom-100
+    .container 
+        .row
+            .col-md-6.item
+                .block-video
+                    .btn-play 
+                        img.img-responsive(src="assets/images/more-images/btn-playvideo.png", alt="")
+                    .btn-close
+                        img.img-responsive(src="assets/images/more-images/btn-closevideo.png", alt="")
+                    img.img-full(src="assets/images/post/image-5.jpg", alt="")
+                    iframe.video-embed(src="https://www.youtube.com/embed/1k2NRnc9vQ4?rel=0" allowfullscreen)
+            .col-md-6.item
+                .heading-main
+                    .main-title
+                        h5.subtitle about us
+                        h2.title why choose us
+                .block-content
+                    h4.title We Are An Effective Team
+                    p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                    h4.title We provide the best services
+                    p.description Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat. Duis aute irure dolor in reprehenderit. Voluptate velit esse cillum dolore eu fugiat.
+                    a.btn.main-color(href="#") view our team
+section.banner-2-default
+    !=partial("_includes/shortcode/banner-2")
+section.recent-news.no-bg-img.padding-top-100.padding-bottom-100
+    .container
+        !=partial("_includes/recent-news")
+.testimonial-default.white
+    .container
+        .testimonial-wrapper
+            !=partial("_includes/shortcode/testimonial-1")
+        .logo-wrapper
+            !=partial("_includes/list-logo-alt")
+.contact-default
+    !=partial("_includes/shortcode/list-contact-info")

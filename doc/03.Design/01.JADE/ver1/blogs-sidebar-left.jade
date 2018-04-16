@@ -1,0 +1,128 @@
+.banner-pages.banner-blog
+    .container.container-wrapper
+        .banner-wrapper
+            .title-wrapper
+                h1.title our blog
+                .breadcrumb-wrapper
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a.breadcrumb-link(href="#") Home
+                        li.breadcrumb-item
+                            span.breadcrumb-active Blog
+            //- .banner-btn
+            //-     a.btn.white-color(href="#") get in touch
+            .clearfix
+.blog-content.padding-top-100.padding-bottom-100
+    .container
+        .row
+            .col-md-8.col-xs-12.main-right
+                .list-block.column-1
+                    .item
+                        .block-1
+                            .label-block
+                                .text-1 25.07
+                                .text-2 2016
+                                a.link-date(href="#")
+                            .block-image
+                                img.img-full(src="assets/images/post/image-17.jpg", alt="")
+                                a.link(href="blog-detail.html")
+                            .block-info
+                                .block
+                                    a.link(href="#") john doe
+                                .block
+                                    p.link date:
+                                    a.link.date(href="#") 25.07.2016
+                                .block
+                                    p.link 24 comments
+                            .block-content
+                                a.title(href="blog-detail.html") Build, design and improve for modern life
+                                .description
+                                    p.text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                a.readmore-icons(href="blog-detail.html")
+                                    i.icons.flaticon-bleed
+                    .item
+                        .block-1
+                            .label-block
+                                .text-1 25.07
+                                .text-2 2016
+                                a.link-date(href="#")
+                            .block-image.block-video
+                                .btn-play 
+                                    img.img-responsive(src="assets/images/more-images/btn-playvideo.png", alt="")
+                                .btn-close
+                                    img.img-responsive(src="assets/images/more-images/btn-closevideo.png", alt="")
+                                img.img-full(src="assets/images/post/image-2.jpg", alt="")
+                                iframe.video-embed(src="https://www.youtube.com/embed/1k2NRnc9vQ4?rel=0" allowfullscreen)
+                            .block-info
+                                .block
+                                    a.link(href="#") john doe
+                                .block
+                                    p.link date:
+                                    a.link.date(href="#") 25.07.2016
+                                .block
+                                    p.link 24 comments
+                            .block-content
+                                a.title(href="blog-detail.html") What’s Wrong with  Venture Capital
+                                .description
+                                    p.text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                a.readmore-icons(href="blog-detail.html")
+                                    i.icons.flaticon-bleed
+                    .item
+                        .block-1.style-2
+                            .label-block
+                                .text-1 25.07
+                                .text-2 2016
+                                a.link-date(href="#")
+                            .block-info
+                                .block
+                                    a.link(href="#") john doe
+                                .block
+                                    p.link date:
+                                    a.link.date(href="#") 25.07.2016
+                                .block
+                                    p.link 24 comments
+                            .block-content
+                                .block-quote
+                                    .content Real estate investing, even on a very small scale, remains a tried and true means of building an individual's cash flow and wealth.
+                                    .author anna thomson
+                                    .title CEO ANZ Bank
+                                a.readmore-icons(href="blog-detail.html")
+                                    i.icons.flaticon-bleed
+                    .item
+                        .block-1
+                            .label-block
+                                .text-1 25.07
+                                .text-2 2016
+                                a.link-date(href="#")  
+                            .block-image.block-gallery-images
+                                .gallery-images
+                                    .item
+                                        img.img-full(src="assets/images/post/image-7.jpg", alt="")
+                                    .item
+                                        img.img-full(src="assets/images/post/image-3.jpg", alt="")
+                                    .item
+                                        img.img-full(src="assets/images/post/image-8.jpg", alt="")
+                            .block-info
+                                .block
+                                    a.link(href="#") john doe
+                                .block
+                                    p.link date:
+                                    a.link.date(href="#") 25.07.2016
+                                .block
+                                    p.link 24 comments
+                            .block-content
+                                a.title(href="blog-detail.html") The Basics Of Western schedule Explained
+                                .description
+                                    p.text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscip it lobortis nisl ut aliquip ex ea commodo consequat.
+                                a.readmore-icons(href="blog-detail.html")
+                                    i.icons.flaticon-bleed
+                !=partial("_includes/shortcode/pagination")
+            .col-md-4.col-xs-12.sidebar
+                    !=partial("_includes/widgets/search")
+                    !=partial("_includes/widgets/categories-2") 
+                    !=partial("_includes/widgets/recent-post")
+                    !=partial("_includes/widgets/archive")
+                    !=partial("_includes/widgets/tags")
+                    !=partial("_includes/widgets/banner-adv")
+        .banner-bottom
+            !=partial("_includes/shortcode/banner-1")

@@ -1,0 +1,133 @@
+.menu-mobile-wrapper
+    .search-mobile
+        form(action="#").input-group
+            input.form-control(type="text", placeholder="Search...")
+            span.input-group-btn
+                button.btn.btn-secondary(type="submit")
+                    i.fa.fa-search
+    ul.nav.navbar-nav
+        li.menu-item.dropdown(class="#{ current.source == 'index' || current.source == 'homepage-2' || current.source == 'homepage-3' || current.source == 'homepage-cleaning' || current.source == 'homepage-plumbing' ? 'current-menu-item' : '' }")
+            a(href="javascript:void(0)")
+                span.text Home
+                span.icons.fa.fa-angle-right
+            ul.sub-menu
+                li.menu-item
+                    a(href="index.html")
+                        span.text Homepage Default
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="homepage-2.html")
+                        span.text Homepage 2
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="homepage-3.html")
+                        span.text Homepage 3
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="homepage-cleaning.html")
+                        span.text Homepage Cleaning
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="homepage-plumbing.html")
+                        span.text Homepage Plumbing
+                        span.icons.fa.fa-angle-right
+        li.menu-item
+            a(href="homepage-2.html")
+                span.text Tab Menu
+                span.icons.fa.fa-angle-right
+        li.menu-item
+            a(href="homepage-3.html")
+                span.text Mega Menu
+                span.icons.fa.fa-angle-right
+        li.menu-item.dropdown(class="#{ current.source == 'projects' || current.source == 'project-detail' || current.source == 'gallery-masonry' || current.source == 'gallery-3col' || current.source == 'gallery-variation' ? 'current-menu-item' : '' }")
+            a(href="javascript:void(0)")
+                span.text Project
+                span.icons.fa.fa-angle-right
+            ul.sub-menu
+                li.menu-item
+                    a(href="projects.html")
+                        span.text Project List
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="project-detail.html")
+                        span.text Project Detail
+                        span.icons.fa.fa-angle-right
+                li.menu-item.dropdown
+                    a(href="javascript:void(0)")
+                        span.text Gallery
+                        span.icons.fa.fa-angle-right
+                    ul.sub-menu.left
+                        li.menu-item
+                            a(href="gallery-3col.html")
+                                span.text Gallery 3 Column
+                                span.icons.fa.fa-angle-right
+                        li.menu-item
+                            a(href="gallery-variation.html")
+                                span.text Gallery Variation
+                                span.icons.fa.fa-angle-right
+                        li.menu-item
+                            a(href="gallery-masonry.html")
+                                span.text Gallery Masonry
+                                span.icons.fa.fa-angle-right
+        li.menu-item.dropdown(class="#{ current.source == 'blogs' || current.source == 'blogs-sidebar-left'  || current.source == 'blogs-2column'  || current.source == 'blogs-3column' || current.source == 'blog-detail' || current.source == 'blog-detail-sidebar-left' ? 'current-menu-item' : '' }")
+            a(href="javascript:void(0)")
+                span.text Blog
+                span.icons.fa.fa-angle-right
+            ul.sub-menu
+                li.menu-item
+                    a(href="blogs.html")
+                        span.text Blog List
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="blogs-sidebar-left.html")
+                        span.text Blog List sidebar left
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="blogs-2column.html")
+                        span.text Blog list 2 column
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="blogs-3column.html")
+                        span.text Blog list 3 column
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="blog-detail.html")
+                        span.text Blog Detail
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="blog-detail-sidebar-left.html")
+                        span.text Blog Detail sidebar left
+                        span.icons.fa.fa-angle-right
+        li.menu-item.dropdown(class="#{ current.source == 'about' || current.source == 'team' || current.source == 'services' || current.source == 'service-detail' || current.source == 'contact' ? 'current-menu-item' : '' }")
+            a(href="javascript:void(0)")
+                span.text Pages
+                span.icons.fa.fa-angle-right
+            ul.sub-menu
+                li.menu-item
+                    a(href="about.html")
+                        span.text About
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="team.html")
+                        span.text Team
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="services.html")
+                        span.text Services
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="service-detail.html")
+                        span.text Service Detail
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="contact.html")
+                        span.text Contact
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="coming-soon.html")
+                        span.text Coming Soon
+                        span.icons.fa.fa-angle-right
+                li.menu-item
+                    a(href="404.html")
+                        span.text page 404
+                        span.icons.fa.fa-angle-right

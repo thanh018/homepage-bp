@@ -1,0 +1,702 @@
+@media screen and (max-width: 768px) {
+
+	/*===================================
+	=            List column            =
+	===================================*/
+	
+		.list-block {
+			&.column-4 {
+	            .item:nth-child(-n + 3) {
+	                margin-top: 30px;
+	            }
+	            .item:nth-child(-n + 2) {
+	                margin-top: 0;
+	            }
+	            >.item {
+	                width: 50%;
+	            }
+	        }
+	        &.column-3 {
+	            .item:nth-child(-n + 3) {
+	                margin-top: 30px;
+	            }
+	            .item:nth-child(-n + 2) {
+	                margin-top: 0;
+	            }
+	            >.item {
+	                width: 50%;
+	            }
+	        }
+		}
+		.list-block-team {
+			&.column-4 {
+	            >.item:nth-child(-n + 3) {
+	                margin-top: 60px;
+	            }
+	            >.item:nth-child(-n + 2) {
+	                margin-top: 0;
+	            }
+	            >.item {
+	                width: 50%;
+	            }
+	        }
+	        &.column-3 {
+	            >.item:nth-child(-n + 3) {
+	                margin-top: 60px;
+	            }
+	            >.item:nth-child(-n + 2) {
+	                margin-top: 0;
+	            }
+	            >.item {
+	                width: 50%;
+	            }
+	        }
+		}
+
+		.label-block {
+			padding: 10px;
+		}
+
+		.block-1 {
+			.block-image:before {
+				padding-top: 67%;
+			}
+			.block-content {
+				padding: 20px;
+			}
+		}
+
+
+		.block-2 {
+			.block-image {
+				display: block;
+				width: 100%;
+				&:before {
+					padding-top: 67%;
+				}
+			}
+			.block-content {
+				display: block;
+				padding: 20px;
+			}
+		}
+	
+	/*=====  End of List column  ======*/
+
+
+	/*===============================
+	=            Spacing            =
+	===============================*/
+	
+		.padding-top-100 {
+			padding-top: 80px;
+		}
+		.padding-bottom-100 {
+			padding-bottom: 80px;
+		}
+
+		.main-right {
+			float: left;
+		}
+	
+	/*=====  End of Spacing  ======*/
+	
+	
+	/*========================================
+	=            Page Coming Soon            =
+	========================================*/
+	
+		.page-coming-soon {
+			background-image: none;
+			.header-main {
+				.logo-wrapper {
+					position: relative;
+					float: none;
+					left: 50%;
+					.transform(translate(-50%,-50%));
+					display: inline-block;
+				}
+			}
+			.title-wrapper {
+				float: none;
+				padding: 0;
+				text-align: center;
+				&:before {
+					content: none;
+				}
+			}
+			.content-left {
+				display: inline-block;
+				padding: 20px 60px;
+			    text-align: center;
+			    width: 100%;
+			}
+			.description {
+				font-size: 25px;
+			}
+			.content-right {
+				display: inline-block;
+				padding: 20px 40px;
+				width: 100%;
+			}
+			.coming-soon {
+				text-align: center;
+			}
+			.main-count {
+				.count-height {
+					display: none;
+				}
+			}
+			.input-wrapper {
+				margin-left: 25%;
+			}
+			.form-control {
+				text-align: center;
+			}
+			.btn-wrapper {
+				text-align: center;
+			}
+		}
+	
+	/*=====  End of Page Coming Soon  ======*/
+		
+
+	/*==============================
+	=            Footer            =
+	==============================*/
+	
+		.wrapper-footer {
+			padding: 80px 0;
+			&.style-2, &.style-3 {
+				padding: 80px 0;
+			}
+		}
+		footer {
+			.widget {
+				margin-bottom: 50px;
+			}
+			.col-md-3 {
+				&:nth-last-child(-n + 2) {
+					.widget {
+						margin-bottom: 0;
+					}
+				}
+			}
+			.col-md-4 {
+				&:last-child {
+					display: block;
+					float: none;
+					.widget {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	
+	/*=====  End of Footer  ======*/
+	
+
+	/*========================================
+	=            Homepage Default            =
+	========================================*/
+	
+		.banner-1 {
+			left: 0;
+			right: 0;
+		}
+		.default-service {
+			padding-bottom: 80px; 
+		}
+		.image-gallery {
+			&:before {
+				left: 0;
+				right: 0;
+				.transform(none);
+			}
+		}
+		.list-image-gallery {
+			.item {
+				width: 50%;
+			}
+		}
+		.why-choose-us {
+			.block-video {
+				margin-bottom: 25px;
+			}
+			.block-content {
+				margin-bottom: 50px;
+			}
+			.block-accordion {
+				margin-bottom: 50px;
+			}
+			.panel-group {
+				margin-bottom: 0;
+			}
+			.item {
+				&:last-child {
+					.block-content, .block-video, .block-accordion {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.banner-2-default {
+			padding: 80px 0;
+		}
+		.recent-news {
+			.block-1 {
+				.block-image {
+					&:before {
+						padding-top: 59%;
+					}
+				}
+			}
+		}
+		.testimonial-default, .testimonial-homepage-2, .testimonial-about, .testimonial-homepage-cleaning {
+			.testimonial-wrapper {
+				width: 100%;
+			}
+			.logo-wrapper {
+				width: 100%;
+				margin: 0;
+				border: none;
+			}
+		}
+		.contact-default {
+			height: 100%;
+			background-image: none;
+			.list-contact-info {
+				background-image: url("../images/background/ruler-1.jpg");
+				position: relative;
+				display: inline-block;
+				top: 0;
+				left: 0;
+				box-shadow: none;
+				.transform(none);
+			}
+		}
+	
+	/*=====  End of Homepage Default  ======*/
+	
+
+	/*==================================
+	=            Homepage 2            =
+	==================================*/
+		.homepage-1-banner {
+			.rectangle {
+				left: 5%;
+			}
+			.banner-title {
+				.title {
+					font-size: 55px;
+				}
+				.subtitle {
+					font-size: 22px;
+				}
+			}
+		}
+		.we-are {
+			.main-content {
+				width: 100%;
+			}
+			.img-full {
+				display: none;
+			}
+		}
+		.how-we-work-1 {
+			padding-top: 300px;
+			.content-wrapper {
+				padding-bottom: 74px;
+			}
+		}
+		.banner-3 {
+			.big-title {
+				font-size: 130px;
+			}
+		}
+		.banner-bottom {
+			padding-top: 70px;
+		}
+	
+	/*=====  End of Homepage 2  ======*/
+
+
+	/*==================================
+	=            Homepage 3            =
+	==================================*/
+	
+		.homepage-2-banner {
+			.subtitle {
+				font-size: 20px;
+			}
+			.title {
+				font-size: 50px;
+			}
+			.rectangle {
+				left: -30%;
+			}
+			.banner-img-wrapper {
+				bottom: -150px;
+				.img-full {
+					height: 790px;
+				}
+			}
+		}
+		.image-gallery {
+			.btn {
+				bottom: -78px;
+				right: 0;
+			}
+		}
+		.fact {
+			padding: 55px 0;
+		}
+	
+	/*=====  End of Homepage 3  ======*/
+
+	
+	/*================================
+	=            Projects            =
+	================================*/
+
+		.banner-pages {
+			.container-wrapper {
+				height: 350px;
+			}
+			.banner-wrapper {
+				padding-bottom: 30px;
+			}
+		}
+		.list-project {
+			> .slick-list > .slick-track {
+				margin-bottom: -25px;
+			}
+		}
+		.project-wrapper {
+			.project-info {
+				width: 100%;
+				padding: 0 0 30px;
+			}
+			.project-images {
+				width: 100%;
+				padding: 0;
+			}
+		}
+		.unconstruction {
+			.banner-bottom {
+				padding-top: 80px;
+			}
+		}
+	
+	/*=====  End of Projects  ======*/
+
+	
+	/*======================================
+	=            Project Detail            =
+	======================================*/
+	
+		.project-detail { 
+			.slider-syncing-wrapper {
+				margin-bottom: 30px;
+			}
+		}
+		.contact-us-now-widget {
+        	.contact-info-box .wrapper-info .text .text-bold {
+	            display: inline-block;
+	            padding-left: 5px;
+	        }
+	    }
+	
+	/*=====  End of Project Detail  ======*/
+
+	
+	/*===================================
+	=            Blog Detail            =
+	===================================*/
+	
+		.sidebar {
+			font-size: 0;
+			margin: 80px -15px 0 -15px;
+			width: auto;
+			.widget {
+				width: 50%;
+				display: inline-block;
+				vertical-align: top;
+				padding: 0 15px;
+				&:nth-last-child(-n + 2) {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.blog-detail {
+			.search-widget {
+				display: none !important;
+			}
+		}
+	
+	/*=====  End of Blog Detail  ======*/
+
+
+	/*==================================
+	=            Page About            =
+	==================================*/
+	
+		.testimonial-about {
+			padding-top: 35px;
+			.banner-bottom {
+				padding-top: 50px;
+				padding-bottom: 80px;
+			}
+		}
+	
+	/*=====  End of Page About  ======*/
+	
+
+	/*=================================
+	=            Page Team            =
+	=================================*/
+	
+		.list-team {
+			.banner-bottom {
+				padding-top: 80px;
+			}
+		}
+	
+	/*=====  End of Page Team  ======*/
+
+
+	/*========================================
+	=            Page Team Member            =
+	========================================*/
+	
+		.portrait-img {
+			margin: 0 0 30px 50%;
+			.transform(translateX(-50%));
+		}
+		.content-team-member {
+			.paragraph, .column-3 {
+				margin-bottom: 25px;
+			}
+		}
+		.certification {
+			width: 31.4%;
+		}
+	
+	/*=====  End of Page Team Member  ======*/
+	
+
+
+	/*===========================
+	=            404            =
+	===========================*/
+		
+		.content-wrapper-404 {
+			.img-construction {
+				display: none;
+			}
+			.img-404 {
+				margin-top: 70px;
+			}
+		}
+		
+	/*=====  End of 404  ======*/
+			
+	/*=====================================
+	=            Page Services            =
+	=====================================*/
+	
+	
+	/*=====  End of Page Services  ======*/
+
+	/*====================================
+	=            Page Contact            =
+	====================================*/
+	
+		.main-contact {
+			height: 530px;
+		}
+		.contact-form-wrapper {
+			width: 50%;
+		}
+	
+	/*=====  End of Page Contact  ======*/
+
+	/*=========================================
+	=            Homepage Cleaning            =
+	=========================================*/
+	
+		.header-wrapper.header-cleaning { 
+			.header-topbar {
+				padding: 10px 0;
+			}
+			.header-main {
+				max-width: 720px;
+				.button-search {
+					display: inline-block;
+					padding-right: 5px;
+					line-height: 80px;
+				}
+				.nav-search {
+					top: 95px;
+					right: 0;
+					&:before {
+						right: 12px;
+					}
+				}
+				&.header-fixed {
+					max-width: 720px;
+					.button-search {
+						line-height: 60px;
+						padding-right: 0;
+					}
+					.nav-search {
+						top: 75px;
+						// right: 15px;
+					}
+				}
+			}
+			.nav-search-1 {
+				display: none;
+			}
+			
+			.topbar-list {
+				float: none !important;
+				text-align: center;
+				&.pull-left {
+					margin-bottom: 10px;
+				}
+				&.pull-right {
+				}
+			}
+			.topbar-icons {
+				font-size: 15px;
+				height: 30px;
+			}
+			.topbar-content {
+				vertical-align: middle;
+			}
+			.topbar-text {
+				padding-right: 10px;
+				&.big {
+					display: inline-block;
+				}
+				&:not(.big) {
+					display: none;
+				}
+			}
+		}
+
+		// .header-wrapper.header-cleaning .nav-search-1 form input[type='text'] {
+		// 	height: 60px;
+		// }
+		
+		.cleaning-services-block {
+			height: 420px;
+		}
+		.cleaning-services {
+			.detail-content {
+				margin-bottom: 40px;
+			}
+		}
+		.list-pricing-plan {
+			.list-block.column-4 {
+				> .item {
+					width: 50%;
+				}
+	            .item:nth-child(-n + 4) {
+	                margin-top: 50px;
+	            }
+	            .item:nth-child(-n + 2) {
+	                margin-top: 0;
+	            }
+	        }
+		}
+		.cleaning-banner {
+			.side-img {
+				display: none;
+			}
+		}
+	
+	/*=====  End of Homepage Cleaning  ======*/
+	
+	
+	/*=========================================
+	=            Homepage Plumbing            =
+	=========================================*/
+	
+		.homepage-plumbing-banner .slide-banner-1-item-wrapper {
+			.subtitle {
+				font-size: 20px;
+			}
+			.title {
+				font-size: 50px;
+			}
+		}
+		.plumbing-services { 
+			padding-top: 80px;
+			.list-block-service {
+				margin-bottom: 0;
+				margin-top: -1px;
+				.transform(none);
+				.item {
+					width: 50%;
+					border: 1px solid #fff;
+					&:nth-child(odd) {
+						content: none;
+					}
+				}
+			}
+		}
+		.plumbing-banner {
+			.banner-5 {
+				.banner-right {
+					padding-left: 20px;
+					padding-right: 24px;
+				}
+				.title {
+					font-size: 40px;
+				}
+				.subtitle {
+					font-size: 24px;
+				}
+			}
+		}
+		.we-are {
+			.side-img {
+				display: none;
+			}
+		}
+		.recent-news-testimonial .block-2 .block-image:before {
+			padding-top: 72%;
+		}
+		.recent-news-testimonial {
+			.list-block {
+				margin-bottom: 40px;
+				&.column-1 {
+					> .item {
+						width: 50%;
+						margin-top: 0;
+					}
+				}
+			}
+		}
+		.plumbing-banner-2 {
+			.banner-6 {
+				.title {
+					font-size: 30px;
+				}
+				.subtitle {
+					font-size: 18px;
+				}
+			}
+		}
+		.wrapper-footer {
+			.side-img {
+				display: none;
+			}
+		}
+	
+	/*=====  End of Homepage Plumbing  ======*/
+	
+	
+}

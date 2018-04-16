@@ -1,0 +1,24 @@
+.banner-pages.banner-gallery-variation
+    .container.container-wrapper
+        .banner-wrapper
+            .title-wrapper
+                h1.title gallery
+                .breadcrumb-wrapper
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a.breadcrumb-link(href="#") Home
+                        li.breadcrumb-item
+                            a.breadcrumb-link(href="#") Pages
+                        li.breadcrumb-item
+                            span.breadcrumb-active Gallery
+            //- .banner-btn
+            //-     a.btn.white-color(href="#") get in touch
+            .clearfix
+.gallery-variation.padding-top-100.padding-bottom-100
+    .container
+        !=partial("_includes/shortcode/isotop-gallery-3")
+        button.btn-loadmore
+            span.text load more
+            img.img-load(src="assets/images/gif/loading.gif" alt="")
+        .banner-bottom
+            !=partial("_includes/shortcode/banner-1")
